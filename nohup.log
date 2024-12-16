@@ -1,0 +1,1239 @@
+2024-12-16 13:31:10 | prod | bsee-etl | task-2 | INFO  | c.b.bsee.etl.service.impl.DataFlowServiceImpl |  | DataFlowServiceImpl.java:95 | specifyTaskDetail for taskId = 34 begin!!!
+2024-12-16 13:31:10 | prod | bsee-etl | task-2 | INFO  | c.b.bsee.etl.service.impl.DataFlowServiceImpl |  | DataFlowServiceImpl.java:101 | taskId = 34
+schema: {"type":"record","name":"HBaseDataRecord","fields":[{"name":"rowKey","type":"string"},{"name":"CCM2_ODD_SEG9_ROLLGAP_EXIT_LEFT_CYL_LOC_SV","type":["null","string"]},{"name":"CCM2_ODD_SEG9_ROLLGAP_INL_RIGHT_CYL_LOC_SV","type":["null","string"]},{"name":"CCM2_ODD_SEG9_ROLLGAP_INL_LEFT_CYL_LOC_ACT","type":["null","string"]},{"name":"CCM2_EVEN_SEG9_ROLLGAP_EXIT_RIGHT_CYL_LOC_SV","type":["null","string"]},{"name":"CCM2_EVEN_SEG9_ROLLGAP_EXIT_LEFT_CYL_LOC_SV","type":["null","string"]},{"name":"CCM2_EVEN_SEG9_ROLLGAP_EXIT_LEFT_CYL_LOC_ACT","type":["null","string"]},{"name":"CCM2_ODD_SEG9_ROLLGAP_EXIT_RIGHT_CYL_LOC_ACT","type":["null","string"]},{"name":"CCM2_EVEN_SEG9_ROLLGAP_EXIT_RIGHT_CYL_LOC_ACT","type":["null","string"]},{"name":"CCM2_EVEN_SEG9_ROLLGAP_INL_RIGHT_CYL_LOC_ACT","type":["null","string"]},{"name":"CCM2_ODD_SEG9_ROLLGAP_EXIT_LEFT_CYL_LOC_ACT","type":["null","string"]},{"name":"CCM2_EVEN_SEG9_ROLLGAP_INL_LEFT_CYL_LOC_ACT","type":["null","string"]},{"name":"CCM2_EVEN_SEG9_ROLLGAP_INL_LEFT_CYL_LOC_SV","type":["null","string"]},{"name":"CCM2_ODD_SEG9_ROLLGAP_INL_RIGHT_CYL_LOC_ACT","type":["null","string"]},{"name":"CCM2_ODD_SEG9_ROLLGAP_EXIT_RIGHT_CYL_LOC_SV","type":["null","string"]},{"name":"CCM2_EVEN_SEG9_ROLLGAP_INL_RIGHT_CYL_LOC_SV","type":["null","string"]},{"name":"CCM2_ODD_SEG9_ROLLGAP_INL_LEFT_CYL_LOC_SV","type":["null","string"]}]}
+2024-12-16 13:31:11 | prod | bsee-etl | task-2 | INFO  | c.b.bsee.etl.service.impl.DataFlowServiceImpl |  | DataFlowServiceImpl.java:308 | Resolved filesystem for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/: hdfs://bdc-e16-13u-mrs-atlas800-02:25019
+2024-12-16 13:31:11 | prod | bsee-etl | task-2 | INFO  | c.b.bsee.etl.service.impl.DataFlowServiceImpl |  | DataFlowServiceImpl.java:310 | Path does not exist: hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/. Creating...
+2024-12-16 13:31:11 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:429 | Initializing hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/ as hoodie table hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+2024-12-16 13:31:11 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:127 | Loading HoodieTableMetaClient from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+261966401 [task-2] INFO  org.apache.hudi.common.table.HoodieTableConfig  - Loading table properties from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/hoodie.properties
+2024-12-16 13:31:11 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:147 | Finished Loading Table of type MERGE_ON_READ(version=1, baseFileFormat=PARQUET) from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+2024-12-16 13:31:11 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:478 | Finished initializing Table of type MERGE_ON_READ from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+2024-12-16 13:31:11 | prod | bsee-etl | ReadOnlyZKClient-bdc-e17-13u-mrs-atlas800-03:24002,bdc-e16-13u-mrs-atlas800-02:24002,bdc-e15-13u-mrs-atlas800-01:24002@0x0b0f467c | INFO  | org.apache.zookeeper.ZooKeeper |  | ZooKeeper.java:646 | Initiating client connection, connectString=bdc-e17-13u-mrs-atlas800-03:24002,bdc-e16-13u-mrs-atlas800-02:24002,bdc-e15-13u-mrs-atlas800-01:24002 sessionTimeout=90000 watcher=org.apache.hadoop.hbase.zookeeper.ReadOnlyZKClient$$Lambda$753/982490859@bff44f4
+2024-12-16 13:31:11 | prod | bsee-etl | ReadOnlyZKClient-bdc-e17-13u-mrs-atlas800-03:24002,bdc-e16-13u-mrs-atlas800-02:24002,bdc-e15-13u-mrs-atlas800-01:24002@0x0b0f467c | INFO  | org.apache.zookeeper.ClientCnxnSocket |  | ClientCnxnSocket.java:241 | jute.maxbuffer value is 1048575 Bytes
+2024-12-16 13:31:11 | prod | bsee-etl | ReadOnlyZKClient-bdc-e17-13u-mrs-atlas800-03:24002,bdc-e16-13u-mrs-atlas800-02:24002,bdc-e15-13u-mrs-atlas800-01:24002@0x0b0f467c | INFO  | org.apache.zookeeper.ClientCnxn |  | ClientCnxn.java:1806 | zookeeper.request.timeout value is 120000. feature enabled=true
+2024-12-16 13:31:11 | prod | bsee-etl | ReadOnlyZKClient-bdc-e17-13u-mrs-atlas800-03:24002,bdc-e16-13u-mrs-atlas800-02:24002,bdc-e15-13u-mrs-atlas800-01:24002@0x0b0f467c | INFO  | o.a.zookeeper.common.whitelist.ClientBindingHelper |  | ClientBindingHelper.java:99 | zookeeper.client.bind.port.range is not configured.
+2024-12-16 13:31:11 | prod | bsee-etl | ReadOnlyZKClient-bdc-e17-13u-mrs-atlas800-03:24002,bdc-e16-13u-mrs-atlas800-02:24002,bdc-e15-13u-mrs-atlas800-01:24002@0x0b0f467c | INFO  | o.a.zookeeper.common.whitelist.ClientBindingHelper |  | ClientBindingHelper.java:61 | zookeeper.client.bind.address is not configured.
+2024-12-16 13:31:11 | prod | bsee-etl | ReadOnlyZKClient-bdc-e17-13u-mrs-atlas800-03:24002,bdc-e16-13u-mrs-atlas800-02:24002,bdc-e15-13u-mrs-atlas800-01:24002@0x0b0f467c-SendThread(bdc-e17-13u-mrs-atlas800-03:24002) | INFO  | org.apache.zookeeper.client.FourLetterWordMain |  | FourLetterWordMain.java:170 | connecting to bdc-e17-13u-mrs-atlas800-03 24002
+2024-12-16 13:31:11 | prod | bsee-etl | ReadOnlyZKClient-bdc-e17-13u-mrs-atlas800-03:24002,bdc-e16-13u-mrs-atlas800-02:24002,bdc-e15-13u-mrs-atlas800-01:24002@0x0b0f467c-SendThread(bdc-e17-13u-mrs-atlas800-03:24002) | INFO  | org.apache.zookeeper.ServerPrincipalProvider |  | ServerPrincipalProvider.java:78 | Got server principal from the server and it is null
+2024-12-16 13:31:11 | prod | bsee-etl | ReadOnlyZKClient-bdc-e17-13u-mrs-atlas800-03:24002,bdc-e16-13u-mrs-atlas800-02:24002,bdc-e15-13u-mrs-atlas800-01:24002@0x0b0f467c-SendThread(bdc-e17-13u-mrs-atlas800-03:24002) | INFO  | org.apache.zookeeper.ServerPrincipalProvider |  | ServerPrincipalProvider.java:57 | Using server principal zookeeper/BDC-E17-13U-MRS-Atlas800-03
+2024-12-16 13:31:11 | prod | bsee-etl | ReadOnlyZKClient-bdc-e17-13u-mrs-atlas800-03:24002,bdc-e16-13u-mrs-atlas800-02:24002,bdc-e15-13u-mrs-atlas800-01:24002@0x0b0f467c-SendThread(bdc-e17-13u-mrs-atlas800-03:24002) | INFO  | org.apache.zookeeper.ClientCnxn |  | ClientCnxn.java:1207 | Opening socket connection to server bdc-e17-13u-mrs-atlas800-03/10.23.179.13:24002.
+2024-12-16 13:31:11 | prod | bsee-etl | ReadOnlyZKClient-bdc-e17-13u-mrs-atlas800-03:24002,bdc-e16-13u-mrs-atlas800-02:24002,bdc-e15-13u-mrs-atlas800-01:24002@0x0b0f467c-SendThread(bdc-e17-13u-mrs-atlas800-03:24002) | INFO  | org.apache.zookeeper.ClientCnxn |  | ClientCnxn.java:1209 | SASL config status: Will not attempt to authenticate using SASL (unknown error)
+2024-12-16 13:31:11 | prod | bsee-etl | ReadOnlyZKClient-bdc-e17-13u-mrs-atlas800-03:24002,bdc-e16-13u-mrs-atlas800-02:24002,bdc-e15-13u-mrs-atlas800-01:24002@0x0b0f467c-SendThread(bdc-e17-13u-mrs-atlas800-03:24002) | INFO  | org.apache.zookeeper.ClientCnxn |  | ClientCnxn.java:1034 | Socket connection established, initiating session, client: /10.201.4.141:36538, server: bdc-e17-13u-mrs-atlas800-03/10.23.179.13:24002
+2024-12-16 13:31:11 | prod | bsee-etl | ReadOnlyZKClient-bdc-e17-13u-mrs-atlas800-03:24002,bdc-e16-13u-mrs-atlas800-02:24002,bdc-e15-13u-mrs-atlas800-01:24002@0x0b0f467c-SendThread(bdc-e17-13u-mrs-atlas800-03:24002) | INFO  | org.apache.zookeeper.ClientCnxn |  | ClientCnxn.java:1494 | Connection  establishment complete on server bdc-e17-13u-mrs-atlas800-03/10.23.179.13:24002, connection id = 0x6c00304bc88ea13d, negotiated timeout = 90000
+2024-12-16 13:31:11 | prod | bsee-etl | task-2 | INFO  | o.a.hadoop.hbase.zookeeper.RecoverableZooKeeper |  | RecoverableZooKeeper.java:104 | Process identifier=GlobalIndexTracker-Client: connecting to ZooKeeper ensemble=bdc-e17-13u-mrs-atlas800-03:24002,bdc-e16-13u-mrs-atlas800-02:24002,bdc-e15-13u-mrs-atlas800-01:24002
+2024-12-16 13:31:11 | prod | bsee-etl | task-2 | INFO  | org.apache.zookeeper.ZooKeeper |  | ZooKeeper.java:646 | Initiating client connection, connectString=bdc-e17-13u-mrs-atlas800-03:24002,bdc-e16-13u-mrs-atlas800-02:24002,bdc-e15-13u-mrs-atlas800-01:24002 sessionTimeout=90000 watcher=org.apache.hadoop.hbase.zookeeper.PendingWatcher@6e720779
+2024-12-16 13:31:11 | prod | bsee-etl | task-2 | INFO  | org.apache.zookeeper.ClientCnxnSocket |  | ClientCnxnSocket.java:241 | jute.maxbuffer value is 1048575 Bytes
+2024-12-16 13:31:11 | prod | bsee-etl | task-2 | INFO  | org.apache.zookeeper.ClientCnxn |  | ClientCnxn.java:1806 | zookeeper.request.timeout value is 120000. feature enabled=true
+2024-12-16 13:31:11 | prod | bsee-etl | task-2 | INFO  | o.a.zookeeper.common.whitelist.ClientBindingHelper |  | ClientBindingHelper.java:99 | zookeeper.client.bind.port.range is not configured.
+2024-12-16 13:31:11 | prod | bsee-etl | task-2 | INFO  | o.a.zookeeper.common.whitelist.ClientBindingHelper |  | ClientBindingHelper.java:61 | zookeeper.client.bind.address is not configured.
+2024-12-16 13:31:11 | prod | bsee-etl | task-2-SendThread(bdc-e16-13u-mrs-atlas800-02:24002) | INFO  | org.apache.zookeeper.client.FourLetterWordMain |  | FourLetterWordMain.java:170 | connecting to bdc-e16-13u-mrs-atlas800-02 24002
+2024-12-16 13:31:11 | prod | bsee-etl | task-2-SendThread(bdc-e16-13u-mrs-atlas800-02:24002) | INFO  | org.apache.zookeeper.ServerPrincipalProvider |  | ServerPrincipalProvider.java:78 | Got server principal from the server and it is null
+2024-12-16 13:31:11 | prod | bsee-etl | task-2-SendThread(bdc-e16-13u-mrs-atlas800-02:24002) | INFO  | org.apache.zookeeper.ServerPrincipalProvider |  | ServerPrincipalProvider.java:57 | Using server principal zookeeper/BDC-E16-13U-MRS-Atlas800-02
+2024-12-16 13:31:11 | prod | bsee-etl | task-2-SendThread(bdc-e16-13u-mrs-atlas800-02:24002) | INFO  | org.apache.zookeeper.ClientCnxn |  | ClientCnxn.java:1207 | Opening socket connection to server bdc-e16-13u-mrs-atlas800-02/10.23.179.12:24002.
+2024-12-16 13:31:11 | prod | bsee-etl | task-2-SendThread(bdc-e16-13u-mrs-atlas800-02:24002) | INFO  | org.apache.zookeeper.ClientCnxn |  | ClientCnxn.java:1209 | SASL config status: Will not attempt to authenticate using SASL (unknown error)
+2024-12-16 13:31:11 | prod | bsee-etl | task-2-SendThread(bdc-e16-13u-mrs-atlas800-02:24002) | INFO  | org.apache.zookeeper.ClientCnxn |  | ClientCnxn.java:1034 | Socket connection established, initiating session, client: /10.201.4.141:63350, server: bdc-e16-13u-mrs-atlas800-02/10.23.179.12:24002
+2024-12-16 13:31:11 | prod | bsee-etl | task-2-SendThread(bdc-e16-13u-mrs-atlas800-02:24002) | INFO  | org.apache.zookeeper.ClientCnxn |  | ClientCnxn.java:1494 | Connection  establishment complete on server bdc-e16-13u-mrs-atlas800-02/10.23.179.12:24002, connection id = 0x6b00302c2f524713, negotiated timeout = 90000
+2024-12-16 13:31:11 | prod | bsee-etl | task-2 | INFO  | org.apache.hadoop.hbase.client.GlobalIndexTracker |  | GlobalIndexTracker.java:59 | GlobalIndexCacheTracker started successfully
+2024-12-16 13:31:23 | prod | bsee-etl | task-2 | INFO  | c.b.bsee.etl.service.impl.DataFlowServiceImpl |  | DataFlowServiceImpl.java:345 | Resolved filesystem for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/: hdfs://bdc-e16-13u-mrs-atlas800-02:25019
+261978437 [task-2] INFO  org.apache.hudi.client.transaction.TransactionManager  - Transaction dataBaseName = null, tableName = null
+261978439 [task-2] INFO  org.apache.hudi.client.BaseHoodieClient  - Embedded Timeline Server is disabled. Not starting timeline service
+261978440 [task-2] INFO  org.apache.hudi.client.transaction.TransactionManager  - Transaction dataBaseName = null, tableName = null
+2024-12-16 13:31:23 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:127 | Loading HoodieTableMetaClient from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+261978466 [task-2] INFO  org.apache.hudi.common.table.HoodieTableConfig  - Loading table properties from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/hoodie.properties
+2024-12-16 13:31:23 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:147 | Finished Loading Table of type MERGE_ON_READ(version=1, baseFileFormat=PARQUET) from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+2024-12-16 13:31:23 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:150 | Loading Active commit timeline for hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+261978510 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Optional.empty
+261978510 [task-2] INFO  org.apache.hudi.common.util.CleanerUtils  - Cleaned failed attempts if any
+2024-12-16 13:31:23 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:127 | Loading HoodieTableMetaClient from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+261978530 [task-2] INFO  org.apache.hudi.common.table.HoodieTableConfig  - Loading table properties from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/hoodie.properties
+2024-12-16 13:31:23 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:147 | Finished Loading Table of type MERGE_ON_READ(version=1, baseFileFormat=PARQUET) from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+2024-12-16 13:31:23 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:150 | Loading Active commit timeline for hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+261978567 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Optional.empty
+261978568 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating View Manager with storage type :MEMORY
+261978569 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating in-memory based Table View
+261978569 [task-2] INFO  org.apache.hudi.client.BaseHoodieWriteClient  - Generate a new instant time: 20241216133123373 action: deltacommit
+261978569 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Creating a new instant [==>20241216133123373__deltacommit__REQUESTED]
+2024-12-16 13:31:23 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:127 | Loading HoodieTableMetaClient from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+261978631 [task-2] INFO  org.apache.hudi.common.table.HoodieTableConfig  - Loading table properties from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/hoodie.properties
+2024-12-16 13:31:23 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:147 | Finished Loading Table of type MERGE_ON_READ(version=1, baseFileFormat=PARQUET) from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+2024-12-16 13:31:23 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:150 | Loading Active commit timeline for hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+261978656 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133123373__deltacommit__REQUESTED]}
+261978657 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating View Manager with storage type :MEMORY
+261978657 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating in-memory based Table View
+261978657 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating InMemory based view for basePath hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01
+261978657 [task-2] INFO  org.apache.hudi.common.table.view.AbstractTableFileSystemView  - Took 0 ms to read  0 instants, 0 replaced file groups
+261978662 [task-2] INFO  org.apache.hudi.common.util.ClusteringUtils  - Found 0 files in pending clustering operations
+261978673 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133123373__deltacommit__REQUESTED]}
+261978673 [task-2] INFO  org.apache.hudi.common.table.view.AbstractTableFileSystemView  - Took 0 ms to read  0 instants, 0 replaced file groups
+261978675 [task-2] INFO  org.apache.hudi.common.util.ClusteringUtils  - Found 0 files in pending clustering operations
+261978675 [task-2] INFO  org.apache.hudi.async.AsyncCleanerService  - The HoodieWriteClient is not configured to auto & async clean. Async clean service will not start.
+261978676 [task-2] INFO  org.apache.hudi.async.AsyncArchiveService  - The HoodieWriteClient is not configured to auto & async archive. Async archive service will not start.
+261978677 [task-2] INFO  org.apache.hudi.client.transaction.TransactionManager  - Transaction dataBaseName = null, tableName = null
+261978700 [task-2] INFO  org.apache.hudi.table.action.commit.BaseJavaCommitActionExecutor  - Input workload profile :WorkloadProfile {globalStat=WorkloadStat {numInserts=7796, numUpdates=0}, InputPartitionStat={2024-08=WorkloadStat {numInserts=7796, numUpdates=0}}, OutputPartitionStat={}, operationType=null}
+261978701 [task-2] INFO  org.apache.hudi.table.action.commit.JavaUpsertPartitioner  - AvgRecordSize => 1024
+261978701 [task-2] INFO  org.apache.hudi.table.action.commit.JavaUpsertPartitioner  - For partitionPath : 2024-08 Small Files => []
+261978701 [task-2] INFO  org.apache.hudi.table.action.commit.JavaUpsertPartitioner  - After small file assignment: unassignedInserts => 7796, totalInsertBuckets => 1, recordsPerBucket => 122880
+261978701 [task-2] INFO  org.apache.hudi.table.action.commit.JavaUpsertPartitioner  - Total insert buckets for partition path 2024-08 => [(InsertBucket {bucketNumber=0, weight=1.0},1.0)]
+261978701 [task-2] INFO  org.apache.hudi.table.action.commit.JavaUpsertPartitioner  - Total Buckets :1, buckets info => {0=BucketInfo {bucketType=INSERT, fileIdPrefix=cefbb88c-16b8-461c-a53d-aeff15e29425, partitionPath=2024-08}}, 
+Partition to insert buckets => {2024-08=[(InsertBucket {bucketNumber=0, weight=1.0},1.0)]}, 
+UpdateLocations mapped to buckets =>{}
+261978705 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Checking for file exists ?hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/20241216133123373.deltacommit.requested
+261978775 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Create new file for toInstant ?hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/20241216133123373.deltacommit.inflight
+261978785 [producer-thread-1] INFO  org.apache.hudi.common.util.queue.IteratorBasedQueueProducer  - starting to buffer records
+261978786 [consumer-thread-1] INFO  org.apache.hudi.common.util.queue.BoundedInMemoryExecutor  - starting consumer thread
+261978875 [consumer-thread-1] INFO  org.apache.hudi.table.marker.DirectWriteMarkers  - Creating Marker Path=hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/.temp/20241216133123373/2024-08/cefbb88c-16b8-461c-a53d-aeff15e29425-0_0-0-0_20241216133123373.parquet.marker.CREATE
+261978880 [consumer-thread-1] INFO  org.apache.hudi.table.marker.DirectWriteMarkers  - [direct] Created marker file hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/.temp/20241216133123373/2024-08/cefbb88c-16b8-461c-a53d-aeff15e29425-0_0-0-0_20241216133123373.parquet.marker.CREATE in 11 ms
+261978883 [consumer-thread-1] ERROR org.apache.hudi.common.util.queue.BoundedInMemoryExecutor  - error consuming records
+org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/cefbb88c-16b8-461c-a53d-aeff15e29425-0_0-0-0_20241216133123373.parquet
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:113)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:82)
+	at org.apache.hudi.io.CreateHandleFactory.create(CreateHandleFactory.java:52)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:89)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:46)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryQueueConsumer.consume(BoundedInMemoryQueueConsumer.java:43)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.lambda$null$2(BoundedInMemoryExecutor.java:142)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Filesystem closed
+	at org.apache.hadoop.hdfs.DFSClient.checkOpen(DFSClient.java:537)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1375)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1357)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1339)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1277)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:608)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:605)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:619)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:529)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.lambda$create$12(HoodieWrapperFileSystem.java:318)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.executeFuncWithTimeMetrics(HoodieWrapperFileSystem.java:112)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.create(HoodieWrapperFileSystem.java:317)
+	at org.apache.parquet.hadoop.util.HadoopOutputFile.create(HadoopOutputFile.java:74)
+	at org.apache.parquet.hadoop.ParquetFileWriter.<init>(ParquetFileWriter.java:329)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:292)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:228)
+	at org.apache.hudi.io.storage.HoodieBaseParquetWriter.<init>(HoodieBaseParquetWriter.java:53)
+	at org.apache.hudi.io.storage.HoodieAvroParquetWriter.<init>(HoodieAvroParquetWriter.java:60)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:94)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:77)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.getFileWriter(HoodieFileWriterFactory.java:61)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:110)
+	... 10 more
+261978885 [producer-thread-1] ERROR org.apache.hudi.common.util.queue.BoundedInMemoryExecutor  - error producing records
+org.apache.hudi.exception.HoodieException: operation has failed
+	at org.apache.hudi.common.util.queue.BoundedInMemoryQueue.throwExceptionIfFailed(BoundedInMemoryQueue.java:254)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryQueue.insertRecord(BoundedInMemoryQueue.java:190)
+	at org.apache.hudi.common.util.queue.IteratorBasedQueueProducer.produce(IteratorBasedQueueProducer.java:52)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.lambda$null$0(BoundedInMemoryExecutor.java:113)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/cefbb88c-16b8-461c-a53d-aeff15e29425-0_0-0-0_20241216133123373.parquet
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:113)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:82)
+	at org.apache.hudi.io.CreateHandleFactory.create(CreateHandleFactory.java:52)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:89)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:46)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryQueueConsumer.consume(BoundedInMemoryQueueConsumer.java:43)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.lambda$null$2(BoundedInMemoryExecutor.java:142)
+	... 4 more
+Caused by: java.io.IOException: Filesystem closed
+	at org.apache.hadoop.hdfs.DFSClient.checkOpen(DFSClient.java:537)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1375)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1357)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1339)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1277)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:608)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:605)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:619)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:529)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.lambda$create$12(HoodieWrapperFileSystem.java:318)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.executeFuncWithTimeMetrics(HoodieWrapperFileSystem.java:112)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.create(HoodieWrapperFileSystem.java:317)
+	at org.apache.parquet.hadoop.util.HadoopOutputFile.create(HadoopOutputFile.java:74)
+	at org.apache.parquet.hadoop.ParquetFileWriter.<init>(ParquetFileWriter.java:329)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:292)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:228)
+	at org.apache.hudi.io.storage.HoodieBaseParquetWriter.<init>(HoodieBaseParquetWriter.java:53)
+	at org.apache.hudi.io.storage.HoodieAvroParquetWriter.<init>(HoodieAvroParquetWriter.java:60)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:94)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:77)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.getFileWriter(HoodieFileWriterFactory.java:61)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:110)
+	... 10 more
+2024-12-16 13:31:23 | prod | bsee-etl | task-2 | ERROR | c.b.bsee.etl.service.impl.DataFlowServiceImpl |  | DataFlowServiceImpl.java:372 | Hudi 写入失败
+2024-12-16 13:31:23 | prod | bsee-etl | task-2 | ERROR | c.b.bsee.etl.service.impl.DataFlowServiceImpl |  | DataFlowServiceImpl.java:373 | Failed to upsert for commit time 20241216133123373
+org.apache.hudi.exception.HoodieUpsertException: Failed to upsert for commit time 20241216133123373
+	at org.apache.hudi.table.action.commit.BaseWriteHelper.write(BaseWriteHelper.java:71)
+	at org.apache.hudi.table.action.commit.JavaUpsertCommitActionExecutor.execute(JavaUpsertCommitActionExecutor.java:53)
+	at org.apache.hudi.table.HoodieJavaCopyOnWriteTable.upsert(HoodieJavaCopyOnWriteTable.java:109)
+	at org.apache.hudi.table.HoodieJavaCopyOnWriteTable.upsert(HoodieJavaCopyOnWriteTable.java:88)
+	at org.apache.hudi.client.HoodieJavaWriteClient.upsert(HoodieJavaWriteClient.java:113)
+	at com.baosteel.bsee.etl.service.impl.DataFlowServiceImpl.writeIntoHudi(DataFlowServiceImpl.java:370)
+	at com.baosteel.bsee.etl.service.impl.DataFlowServiceImpl.writeDataFromHBase2Hoodie(DataFlowServiceImpl.java:210)
+	at com.baosteel.bsee.etl.service.impl.DataFlowServiceImpl.specifyTaskDetail(DataFlowServiceImpl.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.RuntimeException: org.apache.hudi.exception.HoodieException: org.apache.hudi.exception.HoodieException: java.util.concurrent.ExecutionException: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/cefbb88c-16b8-461c-a53d-aeff15e29425-0_0-0-0_20241216133123373.parquet
+	at org.apache.hudi.client.utils.LazyIterableIterator.next(LazyIterableIterator.java:127)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at org.apache.hudi.table.action.commit.BaseJavaCommitActionExecutor.lambda$execute$0(BaseJavaCommitActionExecutor.java:126)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.apache.hudi.table.action.commit.BaseJavaCommitActionExecutor.execute(BaseJavaCommitActionExecutor.java:124)
+	at org.apache.hudi.table.action.commit.BaseJavaCommitActionExecutor.execute(BaseJavaCommitActionExecutor.java:74)
+	at org.apache.hudi.table.action.commit.BaseWriteHelper.write(BaseWriteHelper.java:64)
+	... 19 more
+Caused by: org.apache.hudi.exception.HoodieException: org.apache.hudi.exception.HoodieException: java.util.concurrent.ExecutionException: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/cefbb88c-16b8-461c-a53d-aeff15e29425-0_0-0-0_20241216133123373.parquet
+	at org.apache.hudi.execution.JavaLazyInsertIterable.computeNext(JavaLazyInsertIterable.java:79)
+	at org.apache.hudi.execution.JavaLazyInsertIterable.computeNext(JavaLazyInsertIterable.java:44)
+	at org.apache.hudi.client.utils.LazyIterableIterator.next(LazyIterableIterator.java:125)
+	... 25 more
+Caused by: org.apache.hudi.exception.HoodieException: java.util.concurrent.ExecutionException: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/cefbb88c-16b8-461c-a53d-aeff15e29425-0_0-0-0_20241216133123373.parquet
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.execute(BoundedInMemoryExecutor.java:168)
+	at org.apache.hudi.execution.JavaLazyInsertIterable.computeNext(JavaLazyInsertIterable.java:75)
+	... 27 more
+Caused by: java.util.concurrent.ExecutionException: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/cefbb88c-16b8-461c-a53d-aeff15e29425-0_0-0-0_20241216133123373.parquet
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.execute(BoundedInMemoryExecutor.java:162)
+	... 28 more
+Caused by: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/cefbb88c-16b8-461c-a53d-aeff15e29425-0_0-0-0_20241216133123373.parquet
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:113)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:82)
+	at org.apache.hudi.io.CreateHandleFactory.create(CreateHandleFactory.java:52)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:89)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:46)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryQueueConsumer.consume(BoundedInMemoryQueueConsumer.java:43)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.lambda$null$2(BoundedInMemoryExecutor.java:142)
+	... 4 more
+Caused by: java.io.IOException: Filesystem closed
+	at org.apache.hadoop.hdfs.DFSClient.checkOpen(DFSClient.java:537)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1375)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1357)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1339)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1277)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:608)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:605)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:619)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:529)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.lambda$create$12(HoodieWrapperFileSystem.java:318)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.executeFuncWithTimeMetrics(HoodieWrapperFileSystem.java:112)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.create(HoodieWrapperFileSystem.java:317)
+	at org.apache.parquet.hadoop.util.HadoopOutputFile.create(HadoopOutputFile.java:74)
+	at org.apache.parquet.hadoop.ParquetFileWriter.<init>(ParquetFileWriter.java:329)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:292)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:228)
+	at org.apache.hudi.io.storage.HoodieBaseParquetWriter.<init>(HoodieBaseParquetWriter.java:53)
+	at org.apache.hudi.io.storage.HoodieAvroParquetWriter.<init>(HoodieAvroParquetWriter.java:60)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:94)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:77)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.getFileWriter(HoodieFileWriterFactory.java:61)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:110)
+	... 10 more
+261978888 [task-2] INFO  org.apache.hudi.client.transaction.TransactionManager  - Transaction manager closed
+261978888 [task-2] INFO  org.apache.hudi.client.transaction.TransactionManager  - Transaction manager closed
+2024-12-16 13:31:32 | prod | bsee-etl | task-2 | INFO  | c.b.bsee.etl.service.impl.DataFlowServiceImpl |  | DataFlowServiceImpl.java:345 | Resolved filesystem for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/: hdfs://bdc-e16-13u-mrs-atlas800-02:25019
+261987602 [task-2] INFO  org.apache.hudi.client.transaction.TransactionManager  - Transaction dataBaseName = null, tableName = null
+261987604 [task-2] INFO  org.apache.hudi.client.BaseHoodieClient  - Embedded Timeline Server is disabled. Not starting timeline service
+261987604 [task-2] INFO  org.apache.hudi.client.transaction.TransactionManager  - Transaction dataBaseName = null, tableName = null
+2024-12-16 13:31:32 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:127 | Loading HoodieTableMetaClient from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+261987608 [task-2] INFO  org.apache.hudi.common.table.HoodieTableConfig  - Loading table properties from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/hoodie.properties
+2024-12-16 13:31:32 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:147 | Finished Loading Table of type MERGE_ON_READ(version=1, baseFileFormat=PARQUET) from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+2024-12-16 13:31:32 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:150 | Loading Active commit timeline for hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+261987612 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133123373__deltacommit__INFLIGHT]}
+261987612 [task-2] INFO  org.apache.hudi.common.util.CleanerUtils  - Cleaned failed attempts if any
+2024-12-16 13:31:32 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:127 | Loading HoodieTableMetaClient from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+261987613 [task-2] INFO  org.apache.hudi.common.table.HoodieTableConfig  - Loading table properties from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/hoodie.properties
+2024-12-16 13:31:32 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:147 | Finished Loading Table of type MERGE_ON_READ(version=1, baseFileFormat=PARQUET) from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+2024-12-16 13:31:32 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:150 | Loading Active commit timeline for hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+261987616 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133123373__deltacommit__INFLIGHT]}
+261987616 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating View Manager with storage type :MEMORY
+261987616 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating in-memory based Table View
+261987616 [task-2] INFO  org.apache.hudi.client.heartbeat.HoodieHeartbeatClient  - Heartbeat not found in internal map, falling back to reading from DFS
+261987618 [task-2] WARN  org.apache.hudi.client.heartbeat.HoodieHeartbeatClient  - Heartbeat expired, currentTime = 1734327092420, last heartbeat = Heartbeat{instantTime='20241216133123373', isHeartbeatStarted=false, isHeartbeatStopped=false, lastHeartbeatTime=0, numHeartbeats=0, timer=java.util.Timer@15f283cb}, heartbeat interval = 60000
+261987618 [task-2] INFO  org.apache.hudi.client.BaseHoodieWriteClient  - Begin rollback of instant 20241216133123373
+2024-12-16 13:31:32 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:127 | Loading HoodieTableMetaClient from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+261987620 [task-2] INFO  org.apache.hudi.common.table.HoodieTableConfig  - Loading table properties from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/hoodie.properties
+2024-12-16 13:31:32 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:147 | Finished Loading Table of type MERGE_ON_READ(version=1, baseFileFormat=PARQUET) from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+2024-12-16 13:31:32 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:150 | Loading Active commit timeline for hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+261987624 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133123373__deltacommit__INFLIGHT]}
+261987624 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating View Manager with storage type :MEMORY
+261987624 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating in-memory based Table View
+261987624 [task-2] INFO  org.apache.hudi.client.BaseHoodieWriteClient  - Scheduling Rollback at instant time : 20241216133132422 (exists in active timeline: true), with rollback plan: false
+261987645 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133132422__rollback__REQUESTED]}
+261987645 [task-2] INFO  org.apache.hudi.table.action.rollback.BaseRollbackPlanActionExecutor  - Requesting Rollback with instant time [==>20241216133132422__rollback__REQUESTED]
+261987647 [task-2] INFO  org.apache.hudi.client.transaction.TransactionManager  - Transaction dataBaseName = null, tableName = null
+261987650 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133132422__rollback__REQUESTED]}
+261987653 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Checking for file exists ?hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/20241216133132422.rollback.requested
+261987656 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Create new file for toInstant ?hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/20241216133132422.rollback.inflight
+261987656 [task-2] INFO  org.apache.hudi.table.action.rollback.CopyOnWriteRollbackActionExecutor  - Clean out all base files generated for commit: [==>20241216133123373__deltacommit__INFLIGHT]
+261987659 [task-2] INFO  org.apache.hudi.table.action.rollback.BaseRollbackHelper  - Succeed to delete invalid file during rollback hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/cefbb88c-16b8-461c-a53d-aeff15e29425-0_0-0-0_20241216133123373.parquet
+261987659 [task-2] INFO  org.apache.hudi.table.action.rollback.CopyOnWriteRollbackActionExecutor  - Time(in ms) taken to finish rollback 3
+261987659 [task-2] INFO  org.apache.hudi.table.action.rollback.BaseRollbackActionExecutor  - Rolled back inflight instant 20241216133123373
+261987659 [task-2] INFO  org.apache.hudi.table.action.rollback.BaseRollbackActionExecutor  - Index rolled back for commits [==>20241216133123373__deltacommit__INFLIGHT]
+261987659 [task-2] INFO  org.apache.hudi.table.action.rollback.BaseRollbackActionExecutor  - Deleting instant=[==>20241216133123373__deltacommit__INFLIGHT]
+261987659 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Deleting instant [==>20241216133123373__deltacommit__INFLIGHT]
+261987660 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Removed instant [==>20241216133123373__deltacommit__INFLIGHT]
+261987660 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Deleting instant [==>20241216133123373__deltacommit__REQUESTED]
+261987661 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Removed instant [==>20241216133123373__deltacommit__REQUESTED]
+261987661 [task-2] INFO  org.apache.hudi.table.action.rollback.BaseRollbackActionExecutor  - Deleted pending commit [==>20241216133123373__deltacommit__REQUESTED]
+261987662 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Checking for file exists ?hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/20241216133132422.rollback.inflight
+261987678 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Create new file for toInstant ?hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/20241216133132422.rollback
+261987678 [task-2] INFO  org.apache.hudi.table.action.rollback.BaseRollbackActionExecutor  - Rollback of Commits [20241216133123373] is complete
+261987681 [task-2] INFO  org.apache.hudi.common.fs.FSUtils  - Removed directory at hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/.temp/20241216133123373
+261987681 [task-2] INFO  org.apache.hudi.client.BaseHoodieWriteClient  - Generate a new instant time: 20241216133132485 action: deltacommit
+261987681 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Creating a new instant [==>20241216133132485__deltacommit__REQUESTED]
+2024-12-16 13:31:32 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:127 | Loading HoodieTableMetaClient from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+261987686 [task-2] INFO  org.apache.hudi.common.table.HoodieTableConfig  - Loading table properties from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/hoodie.properties
+2024-12-16 13:31:32 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:147 | Finished Loading Table of type MERGE_ON_READ(version=1, baseFileFormat=PARQUET) from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+2024-12-16 13:31:32 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:150 | Loading Active commit timeline for hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+261987689 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133132485__deltacommit__REQUESTED]}
+261987689 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating View Manager with storage type :MEMORY
+261987689 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating in-memory based Table View
+261987689 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating InMemory based view for basePath hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01
+261987689 [task-2] INFO  org.apache.hudi.common.table.view.AbstractTableFileSystemView  - Took 0 ms to read  0 instants, 0 replaced file groups
+261987690 [task-2] INFO  org.apache.hudi.common.util.ClusteringUtils  - Found 0 files in pending clustering operations
+261987691 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133132485__deltacommit__REQUESTED]}
+261987691 [task-2] INFO  org.apache.hudi.common.table.view.AbstractTableFileSystemView  - Took 0 ms to read  0 instants, 0 replaced file groups
+261987692 [task-2] INFO  org.apache.hudi.common.util.ClusteringUtils  - Found 0 files in pending clustering operations
+261987692 [task-2] INFO  org.apache.hudi.async.AsyncCleanerService  - The HoodieWriteClient is not configured to auto & async clean. Async clean service will not start.
+261987692 [task-2] INFO  org.apache.hudi.async.AsyncArchiveService  - The HoodieWriteClient is not configured to auto & async archive. Async archive service will not start.
+261987692 [task-2] INFO  org.apache.hudi.client.transaction.TransactionManager  - Transaction dataBaseName = null, tableName = null
+261987714 [task-2] INFO  org.apache.hudi.table.action.commit.BaseJavaCommitActionExecutor  - Input workload profile :WorkloadProfile {globalStat=WorkloadStat {numInserts=7533, numUpdates=0}, InputPartitionStat={2024-08=WorkloadStat {numInserts=7533, numUpdates=0}}, OutputPartitionStat={}, operationType=null}
+261987714 [task-2] INFO  org.apache.hudi.table.action.commit.JavaUpsertPartitioner  - AvgRecordSize => 1024
+261987714 [task-2] INFO  org.apache.hudi.table.action.commit.JavaUpsertPartitioner  - For partitionPath : 2024-08 Small Files => []
+261987714 [task-2] INFO  org.apache.hudi.table.action.commit.JavaUpsertPartitioner  - After small file assignment: unassignedInserts => 7533, totalInsertBuckets => 1, recordsPerBucket => 122880
+261987715 [task-2] INFO  org.apache.hudi.table.action.commit.JavaUpsertPartitioner  - Total insert buckets for partition path 2024-08 => [(InsertBucket {bucketNumber=0, weight=1.0},1.0)]
+261987715 [task-2] INFO  org.apache.hudi.table.action.commit.JavaUpsertPartitioner  - Total Buckets :1, buckets info => {0=BucketInfo {bucketType=INSERT, fileIdPrefix=e1711b1d-ef78-4b2b-afb3-1b5fe9acc05d, partitionPath=2024-08}}, 
+Partition to insert buckets => {2024-08=[(InsertBucket {bucketNumber=0, weight=1.0},1.0)]}, 
+UpdateLocations mapped to buckets =>{}
+261987715 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Checking for file exists ?hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/20241216133132485.deltacommit.requested
+261987732 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Create new file for toInstant ?hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/20241216133132485.deltacommit.inflight
+261987739 [producer-thread-1] INFO  org.apache.hudi.common.util.queue.IteratorBasedQueueProducer  - starting to buffer records
+261987741 [consumer-thread-1] INFO  org.apache.hudi.common.util.queue.BoundedInMemoryExecutor  - starting consumer thread
+261987746 [consumer-thread-1] INFO  org.apache.hudi.table.marker.DirectWriteMarkers  - Creating Marker Path=hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/.temp/20241216133132485/2024-08/e1711b1d-ef78-4b2b-afb3-1b5fe9acc05d-0_0-0-0_20241216133132485.parquet.marker.CREATE
+261987748 [consumer-thread-1] INFO  org.apache.hudi.table.marker.DirectWriteMarkers  - [direct] Created marker file hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/.temp/20241216133132485/2024-08/e1711b1d-ef78-4b2b-afb3-1b5fe9acc05d-0_0-0-0_20241216133132485.parquet.marker.CREATE in 4 ms
+261987750 [consumer-thread-1] ERROR org.apache.hudi.common.util.queue.BoundedInMemoryExecutor  - error consuming records
+org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/e1711b1d-ef78-4b2b-afb3-1b5fe9acc05d-0_0-0-0_20241216133132485.parquet
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:113)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:82)
+	at org.apache.hudi.io.CreateHandleFactory.create(CreateHandleFactory.java:52)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:89)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:46)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryQueueConsumer.consume(BoundedInMemoryQueueConsumer.java:43)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.lambda$null$2(BoundedInMemoryExecutor.java:142)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Filesystem closed
+	at org.apache.hadoop.hdfs.DFSClient.checkOpen(DFSClient.java:537)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1375)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1357)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1339)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1277)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:608)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:605)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:619)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:529)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.lambda$create$12(HoodieWrapperFileSystem.java:318)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.executeFuncWithTimeMetrics(HoodieWrapperFileSystem.java:112)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.create(HoodieWrapperFileSystem.java:317)
+	at org.apache.parquet.hadoop.util.HadoopOutputFile.create(HadoopOutputFile.java:74)
+	at org.apache.parquet.hadoop.ParquetFileWriter.<init>(ParquetFileWriter.java:329)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:292)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:228)
+	at org.apache.hudi.io.storage.HoodieBaseParquetWriter.<init>(HoodieBaseParquetWriter.java:53)
+	at org.apache.hudi.io.storage.HoodieAvroParquetWriter.<init>(HoodieAvroParquetWriter.java:60)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:94)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:77)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.getFileWriter(HoodieFileWriterFactory.java:61)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:110)
+	... 10 more
+261987751 [producer-thread-1] ERROR org.apache.hudi.common.util.queue.BoundedInMemoryExecutor  - error producing records
+org.apache.hudi.exception.HoodieException: operation has failed
+	at org.apache.hudi.common.util.queue.BoundedInMemoryQueue.throwExceptionIfFailed(BoundedInMemoryQueue.java:254)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryQueue.insertRecord(BoundedInMemoryQueue.java:190)
+	at org.apache.hudi.common.util.queue.IteratorBasedQueueProducer.produce(IteratorBasedQueueProducer.java:52)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.lambda$null$0(BoundedInMemoryExecutor.java:113)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/e1711b1d-ef78-4b2b-afb3-1b5fe9acc05d-0_0-0-0_20241216133132485.parquet
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:113)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:82)
+	at org.apache.hudi.io.CreateHandleFactory.create(CreateHandleFactory.java:52)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:89)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:46)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryQueueConsumer.consume(BoundedInMemoryQueueConsumer.java:43)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.lambda$null$2(BoundedInMemoryExecutor.java:142)
+	... 4 more
+Caused by: java.io.IOException: Filesystem closed
+	at org.apache.hadoop.hdfs.DFSClient.checkOpen(DFSClient.java:537)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1375)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1357)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1339)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1277)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:608)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:605)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:619)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:529)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.lambda$create$12(HoodieWrapperFileSystem.java:318)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.executeFuncWithTimeMetrics(HoodieWrapperFileSystem.java:112)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.create(HoodieWrapperFileSystem.java:317)
+	at org.apache.parquet.hadoop.util.HadoopOutputFile.create(HadoopOutputFile.java:74)
+	at org.apache.parquet.hadoop.ParquetFileWriter.<init>(ParquetFileWriter.java:329)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:292)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:228)
+	at org.apache.hudi.io.storage.HoodieBaseParquetWriter.<init>(HoodieBaseParquetWriter.java:53)
+	at org.apache.hudi.io.storage.HoodieAvroParquetWriter.<init>(HoodieAvroParquetWriter.java:60)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:94)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:77)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.getFileWriter(HoodieFileWriterFactory.java:61)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:110)
+	... 10 more
+2024-12-16 13:31:32 | prod | bsee-etl | task-2 | ERROR | c.b.bsee.etl.service.impl.DataFlowServiceImpl |  | DataFlowServiceImpl.java:372 | Hudi 写入失败
+2024-12-16 13:31:32 | prod | bsee-etl | task-2 | ERROR | c.b.bsee.etl.service.impl.DataFlowServiceImpl |  | DataFlowServiceImpl.java:373 | Failed to upsert for commit time 20241216133132485
+org.apache.hudi.exception.HoodieUpsertException: Failed to upsert for commit time 20241216133132485
+	at org.apache.hudi.table.action.commit.BaseWriteHelper.write(BaseWriteHelper.java:71)
+	at org.apache.hudi.table.action.commit.JavaUpsertCommitActionExecutor.execute(JavaUpsertCommitActionExecutor.java:53)
+	at org.apache.hudi.table.HoodieJavaCopyOnWriteTable.upsert(HoodieJavaCopyOnWriteTable.java:109)
+	at org.apache.hudi.table.HoodieJavaCopyOnWriteTable.upsert(HoodieJavaCopyOnWriteTable.java:88)
+	at org.apache.hudi.client.HoodieJavaWriteClient.upsert(HoodieJavaWriteClient.java:113)
+	at com.baosteel.bsee.etl.service.impl.DataFlowServiceImpl.writeIntoHudi(DataFlowServiceImpl.java:370)
+	at com.baosteel.bsee.etl.service.impl.DataFlowServiceImpl.writeDataFromHBase2Hoodie(DataFlowServiceImpl.java:210)
+	at com.baosteel.bsee.etl.service.impl.DataFlowServiceImpl.specifyTaskDetail(DataFlowServiceImpl.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.RuntimeException: org.apache.hudi.exception.HoodieException: org.apache.hudi.exception.HoodieException: java.util.concurrent.ExecutionException: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/e1711b1d-ef78-4b2b-afb3-1b5fe9acc05d-0_0-0-0_20241216133132485.parquet
+	at org.apache.hudi.client.utils.LazyIterableIterator.next(LazyIterableIterator.java:127)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at org.apache.hudi.table.action.commit.BaseJavaCommitActionExecutor.lambda$execute$0(BaseJavaCommitActionExecutor.java:126)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.apache.hudi.table.action.commit.BaseJavaCommitActionExecutor.execute(BaseJavaCommitActionExecutor.java:124)
+	at org.apache.hudi.table.action.commit.BaseJavaCommitActionExecutor.execute(BaseJavaCommitActionExecutor.java:74)
+	at org.apache.hudi.table.action.commit.BaseWriteHelper.write(BaseWriteHelper.java:64)
+	... 19 more
+Caused by: org.apache.hudi.exception.HoodieException: org.apache.hudi.exception.HoodieException: java.util.concurrent.ExecutionException: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/e1711b1d-ef78-4b2b-afb3-1b5fe9acc05d-0_0-0-0_20241216133132485.parquet
+	at org.apache.hudi.execution.JavaLazyInsertIterable.computeNext(JavaLazyInsertIterable.java:79)
+	at org.apache.hudi.execution.JavaLazyInsertIterable.computeNext(JavaLazyInsertIterable.java:44)
+	at org.apache.hudi.client.utils.LazyIterableIterator.next(LazyIterableIterator.java:125)
+	... 25 more
+Caused by: org.apache.hudi.exception.HoodieException: java.util.concurrent.ExecutionException: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/e1711b1d-ef78-4b2b-afb3-1b5fe9acc05d-0_0-0-0_20241216133132485.parquet
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.execute(BoundedInMemoryExecutor.java:168)
+	at org.apache.hudi.execution.JavaLazyInsertIterable.computeNext(JavaLazyInsertIterable.java:75)
+	... 27 more
+Caused by: java.util.concurrent.ExecutionException: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/e1711b1d-ef78-4b2b-afb3-1b5fe9acc05d-0_0-0-0_20241216133132485.parquet
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.execute(BoundedInMemoryExecutor.java:162)
+	... 28 more
+Caused by: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/e1711b1d-ef78-4b2b-afb3-1b5fe9acc05d-0_0-0-0_20241216133132485.parquet
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:113)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:82)
+	at org.apache.hudi.io.CreateHandleFactory.create(CreateHandleFactory.java:52)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:89)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:46)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryQueueConsumer.consume(BoundedInMemoryQueueConsumer.java:43)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.lambda$null$2(BoundedInMemoryExecutor.java:142)
+	... 4 more
+Caused by: java.io.IOException: Filesystem closed
+	at org.apache.hadoop.hdfs.DFSClient.checkOpen(DFSClient.java:537)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1375)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1357)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1339)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1277)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:608)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:605)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:619)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:529)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.lambda$create$12(HoodieWrapperFileSystem.java:318)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.executeFuncWithTimeMetrics(HoodieWrapperFileSystem.java:112)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.create(HoodieWrapperFileSystem.java:317)
+	at org.apache.parquet.hadoop.util.HadoopOutputFile.create(HadoopOutputFile.java:74)
+	at org.apache.parquet.hadoop.ParquetFileWriter.<init>(ParquetFileWriter.java:329)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:292)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:228)
+	at org.apache.hudi.io.storage.HoodieBaseParquetWriter.<init>(HoodieBaseParquetWriter.java:53)
+	at org.apache.hudi.io.storage.HoodieAvroParquetWriter.<init>(HoodieAvroParquetWriter.java:60)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:94)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:77)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.getFileWriter(HoodieFileWriterFactory.java:61)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:110)
+	... 10 more
+261987754 [task-2] INFO  org.apache.hudi.client.transaction.TransactionManager  - Transaction manager closed
+261987754 [task-2] INFO  org.apache.hudi.client.transaction.TransactionManager  - Transaction manager closed
+2024-12-16 13:31:41 | prod | bsee-etl | task-2 | INFO  | c.b.bsee.etl.service.impl.DataFlowServiceImpl |  | DataFlowServiceImpl.java:345 | Resolved filesystem for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/: hdfs://bdc-e16-13u-mrs-atlas800-02:25019
+261996975 [task-2] INFO  org.apache.hudi.client.transaction.TransactionManager  - Transaction dataBaseName = null, tableName = null
+261996976 [task-2] INFO  org.apache.hudi.client.BaseHoodieClient  - Embedded Timeline Server is disabled. Not starting timeline service
+261996977 [task-2] INFO  org.apache.hudi.client.transaction.TransactionManager  - Transaction dataBaseName = null, tableName = null
+2024-12-16 13:31:41 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:127 | Loading HoodieTableMetaClient from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+261996980 [task-2] INFO  org.apache.hudi.common.table.HoodieTableConfig  - Loading table properties from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/hoodie.properties
+2024-12-16 13:31:41 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:147 | Finished Loading Table of type MERGE_ON_READ(version=1, baseFileFormat=PARQUET) from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+2024-12-16 13:31:41 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:150 | Loading Active commit timeline for hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+261996984 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133132485__deltacommit__INFLIGHT]}
+261996984 [task-2] INFO  org.apache.hudi.common.util.CleanerUtils  - Cleaned failed attempts if any
+2024-12-16 13:31:41 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:127 | Loading HoodieTableMetaClient from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+261996985 [task-2] INFO  org.apache.hudi.common.table.HoodieTableConfig  - Loading table properties from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/hoodie.properties
+2024-12-16 13:31:41 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:147 | Finished Loading Table of type MERGE_ON_READ(version=1, baseFileFormat=PARQUET) from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+2024-12-16 13:31:41 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:150 | Loading Active commit timeline for hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+261996990 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133132485__deltacommit__INFLIGHT]}
+261996990 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating View Manager with storage type :MEMORY
+261996990 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating in-memory based Table View
+261996990 [task-2] INFO  org.apache.hudi.client.heartbeat.HoodieHeartbeatClient  - Heartbeat not found in internal map, falling back to reading from DFS
+261996991 [task-2] WARN  org.apache.hudi.client.heartbeat.HoodieHeartbeatClient  - Heartbeat expired, currentTime = 1734327101794, last heartbeat = Heartbeat{instantTime='20241216133132485', isHeartbeatStarted=false, isHeartbeatStopped=false, lastHeartbeatTime=0, numHeartbeats=0, timer=java.util.Timer@d0c3a26}, heartbeat interval = 60000
+261996991 [task-2] INFO  org.apache.hudi.client.BaseHoodieWriteClient  - Begin rollback of instant 20241216133132485
+2024-12-16 13:31:41 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:127 | Loading HoodieTableMetaClient from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+261996993 [task-2] INFO  org.apache.hudi.common.table.HoodieTableConfig  - Loading table properties from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/hoodie.properties
+2024-12-16 13:31:41 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:147 | Finished Loading Table of type MERGE_ON_READ(version=1, baseFileFormat=PARQUET) from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+2024-12-16 13:31:41 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:150 | Loading Active commit timeline for hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+261996996 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133132485__deltacommit__INFLIGHT]}
+261996996 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating View Manager with storage type :MEMORY
+261996996 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating in-memory based Table View
+261996996 [task-2] INFO  org.apache.hudi.client.BaseHoodieWriteClient  - Scheduling Rollback at instant time : 20241216133141795 (exists in active timeline: true), with rollback plan: false
+261997022 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133141795__rollback__REQUESTED]}
+261997022 [task-2] INFO  org.apache.hudi.table.action.rollback.BaseRollbackPlanActionExecutor  - Requesting Rollback with instant time [==>20241216133141795__rollback__REQUESTED]
+261997022 [task-2] INFO  org.apache.hudi.client.transaction.TransactionManager  - Transaction dataBaseName = null, tableName = null
+261997025 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133141795__rollback__REQUESTED]}
+261997027 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Checking for file exists ?hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/20241216133141795.rollback.requested
+261997031 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Create new file for toInstant ?hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/20241216133141795.rollback.inflight
+261997031 [task-2] INFO  org.apache.hudi.table.action.rollback.CopyOnWriteRollbackActionExecutor  - Clean out all base files generated for commit: [==>20241216133132485__deltacommit__INFLIGHT]
+261997033 [task-2] INFO  org.apache.hudi.table.action.rollback.BaseRollbackHelper  - Succeed to delete invalid file during rollback hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/e1711b1d-ef78-4b2b-afb3-1b5fe9acc05d-0_0-0-0_20241216133132485.parquet
+261997033 [task-2] INFO  org.apache.hudi.table.action.rollback.CopyOnWriteRollbackActionExecutor  - Time(in ms) taken to finish rollback 2
+261997033 [task-2] INFO  org.apache.hudi.table.action.rollback.BaseRollbackActionExecutor  - Rolled back inflight instant 20241216133132485
+261997033 [task-2] INFO  org.apache.hudi.table.action.rollback.BaseRollbackActionExecutor  - Index rolled back for commits [==>20241216133132485__deltacommit__INFLIGHT]
+261997033 [task-2] INFO  org.apache.hudi.table.action.rollback.BaseRollbackActionExecutor  - Deleting instant=[==>20241216133132485__deltacommit__INFLIGHT]
+261997033 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Deleting instant [==>20241216133132485__deltacommit__INFLIGHT]
+261997034 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Removed instant [==>20241216133132485__deltacommit__INFLIGHT]
+261997034 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Deleting instant [==>20241216133132485__deltacommit__REQUESTED]
+261997035 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Removed instant [==>20241216133132485__deltacommit__REQUESTED]
+261997035 [task-2] INFO  org.apache.hudi.table.action.rollback.BaseRollbackActionExecutor  - Deleted pending commit [==>20241216133132485__deltacommit__REQUESTED]
+261997035 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Checking for file exists ?hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/20241216133141795.rollback.inflight
+261997052 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Create new file for toInstant ?hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/20241216133141795.rollback
+261997052 [task-2] INFO  org.apache.hudi.table.action.rollback.BaseRollbackActionExecutor  - Rollback of Commits [20241216133132485] is complete
+261997056 [task-2] INFO  org.apache.hudi.common.fs.FSUtils  - Removed directory at hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/.temp/20241216133132485
+261997056 [task-2] INFO  org.apache.hudi.client.BaseHoodieWriteClient  - Generate a new instant time: 20241216133141860 action: deltacommit
+261997056 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Creating a new instant [==>20241216133141860__deltacommit__REQUESTED]
+2024-12-16 13:31:41 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:127 | Loading HoodieTableMetaClient from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+261997061 [task-2] INFO  org.apache.hudi.common.table.HoodieTableConfig  - Loading table properties from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/hoodie.properties
+2024-12-16 13:31:41 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:147 | Finished Loading Table of type MERGE_ON_READ(version=1, baseFileFormat=PARQUET) from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+2024-12-16 13:31:41 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:150 | Loading Active commit timeline for hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+261997064 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133141860__deltacommit__REQUESTED]}
+261997065 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating View Manager with storage type :MEMORY
+261997065 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating in-memory based Table View
+261997065 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating InMemory based view for basePath hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01
+261997065 [task-2] INFO  org.apache.hudi.common.table.view.AbstractTableFileSystemView  - Took 0 ms to read  0 instants, 0 replaced file groups
+261997066 [task-2] INFO  org.apache.hudi.common.util.ClusteringUtils  - Found 0 files in pending clustering operations
+261997067 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133141860__deltacommit__REQUESTED]}
+261997067 [task-2] INFO  org.apache.hudi.common.table.view.AbstractTableFileSystemView  - Took 0 ms to read  0 instants, 0 replaced file groups
+261997067 [task-2] INFO  org.apache.hudi.common.util.ClusteringUtils  - Found 0 files in pending clustering operations
+261997067 [task-2] INFO  org.apache.hudi.async.AsyncCleanerService  - The HoodieWriteClient is not configured to auto & async clean. Async clean service will not start.
+261997067 [task-2] INFO  org.apache.hudi.async.AsyncArchiveService  - The HoodieWriteClient is not configured to auto & async archive. Async archive service will not start.
+261997068 [task-2] INFO  org.apache.hudi.client.transaction.TransactionManager  - Transaction dataBaseName = null, tableName = null
+261997091 [task-2] INFO  org.apache.hudi.table.action.commit.BaseJavaCommitActionExecutor  - Input workload profile :WorkloadProfile {globalStat=WorkloadStat {numInserts=7750, numUpdates=0}, InputPartitionStat={2024-08=WorkloadStat {numInserts=7750, numUpdates=0}}, OutputPartitionStat={}, operationType=null}
+261997091 [task-2] INFO  org.apache.hudi.table.action.commit.JavaUpsertPartitioner  - AvgRecordSize => 1024
+261997091 [task-2] INFO  org.apache.hudi.table.action.commit.JavaUpsertPartitioner  - For partitionPath : 2024-08 Small Files => []
+261997091 [task-2] INFO  org.apache.hudi.table.action.commit.JavaUpsertPartitioner  - After small file assignment: unassignedInserts => 7750, totalInsertBuckets => 1, recordsPerBucket => 122880
+261997091 [task-2] INFO  org.apache.hudi.table.action.commit.JavaUpsertPartitioner  - Total insert buckets for partition path 2024-08 => [(InsertBucket {bucketNumber=0, weight=1.0},1.0)]
+261997091 [task-2] INFO  org.apache.hudi.table.action.commit.JavaUpsertPartitioner  - Total Buckets :1, buckets info => {0=BucketInfo {bucketType=INSERT, fileIdPrefix=6f9c697b-f292-4229-8275-9ced569a98ef, partitionPath=2024-08}}, 
+Partition to insert buckets => {2024-08=[(InsertBucket {bucketNumber=0, weight=1.0},1.0)]}, 
+UpdateLocations mapped to buckets =>{}
+261997092 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Checking for file exists ?hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/20241216133141860.deltacommit.requested
+261997108 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Create new file for toInstant ?hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/20241216133141860.deltacommit.inflight
+261997117 [producer-thread-1] INFO  org.apache.hudi.common.util.queue.IteratorBasedQueueProducer  - starting to buffer records
+261997119 [consumer-thread-1] INFO  org.apache.hudi.common.util.queue.BoundedInMemoryExecutor  - starting consumer thread
+261997125 [consumer-thread-1] INFO  org.apache.hudi.table.marker.DirectWriteMarkers  - Creating Marker Path=hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/.temp/20241216133141860/2024-08/6f9c697b-f292-4229-8275-9ced569a98ef-0_0-0-0_20241216133141860.parquet.marker.CREATE
+261997128 [consumer-thread-1] INFO  org.apache.hudi.table.marker.DirectWriteMarkers  - [direct] Created marker file hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/.temp/20241216133141860/2024-08/6f9c697b-f292-4229-8275-9ced569a98ef-0_0-0-0_20241216133141860.parquet.marker.CREATE in 5 ms
+261997130 [consumer-thread-1] ERROR org.apache.hudi.common.util.queue.BoundedInMemoryExecutor  - error consuming records
+org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/6f9c697b-f292-4229-8275-9ced569a98ef-0_0-0-0_20241216133141860.parquet
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:113)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:82)
+	at org.apache.hudi.io.CreateHandleFactory.create(CreateHandleFactory.java:52)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:89)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:46)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryQueueConsumer.consume(BoundedInMemoryQueueConsumer.java:43)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.lambda$null$2(BoundedInMemoryExecutor.java:142)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Filesystem closed
+	at org.apache.hadoop.hdfs.DFSClient.checkOpen(DFSClient.java:537)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1375)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1357)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1339)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1277)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:608)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:605)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:619)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:529)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.lambda$create$12(HoodieWrapperFileSystem.java:318)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.executeFuncWithTimeMetrics(HoodieWrapperFileSystem.java:112)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.create(HoodieWrapperFileSystem.java:317)
+	at org.apache.parquet.hadoop.util.HadoopOutputFile.create(HadoopOutputFile.java:74)
+	at org.apache.parquet.hadoop.ParquetFileWriter.<init>(ParquetFileWriter.java:329)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:292)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:228)
+	at org.apache.hudi.io.storage.HoodieBaseParquetWriter.<init>(HoodieBaseParquetWriter.java:53)
+	at org.apache.hudi.io.storage.HoodieAvroParquetWriter.<init>(HoodieAvroParquetWriter.java:60)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:94)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:77)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.getFileWriter(HoodieFileWriterFactory.java:61)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:110)
+	... 10 more
+261997131 [producer-thread-1] ERROR org.apache.hudi.common.util.queue.BoundedInMemoryExecutor  - error producing records
+org.apache.hudi.exception.HoodieException: operation has failed
+	at org.apache.hudi.common.util.queue.BoundedInMemoryQueue.throwExceptionIfFailed(BoundedInMemoryQueue.java:254)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryQueue.insertRecord(BoundedInMemoryQueue.java:190)
+	at org.apache.hudi.common.util.queue.IteratorBasedQueueProducer.produce(IteratorBasedQueueProducer.java:52)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.lambda$null$0(BoundedInMemoryExecutor.java:113)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/6f9c697b-f292-4229-8275-9ced569a98ef-0_0-0-0_20241216133141860.parquet
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:113)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:82)
+	at org.apache.hudi.io.CreateHandleFactory.create(CreateHandleFactory.java:52)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:89)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:46)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryQueueConsumer.consume(BoundedInMemoryQueueConsumer.java:43)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.lambda$null$2(BoundedInMemoryExecutor.java:142)
+	... 4 more
+Caused by: java.io.IOException: Filesystem closed
+	at org.apache.hadoop.hdfs.DFSClient.checkOpen(DFSClient.java:537)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1375)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1357)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1339)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1277)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:608)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:605)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:619)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:529)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.lambda$create$12(HoodieWrapperFileSystem.java:318)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.executeFuncWithTimeMetrics(HoodieWrapperFileSystem.java:112)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.create(HoodieWrapperFileSystem.java:317)
+	at org.apache.parquet.hadoop.util.HadoopOutputFile.create(HadoopOutputFile.java:74)
+	at org.apache.parquet.hadoop.ParquetFileWriter.<init>(ParquetFileWriter.java:329)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:292)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:228)
+	at org.apache.hudi.io.storage.HoodieBaseParquetWriter.<init>(HoodieBaseParquetWriter.java:53)
+	at org.apache.hudi.io.storage.HoodieAvroParquetWriter.<init>(HoodieAvroParquetWriter.java:60)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:94)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:77)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.getFileWriter(HoodieFileWriterFactory.java:61)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:110)
+	... 10 more
+2024-12-16 13:31:41 | prod | bsee-etl | task-2 | ERROR | c.b.bsee.etl.service.impl.DataFlowServiceImpl |  | DataFlowServiceImpl.java:372 | Hudi 写入失败
+2024-12-16 13:31:41 | prod | bsee-etl | task-2 | ERROR | c.b.bsee.etl.service.impl.DataFlowServiceImpl |  | DataFlowServiceImpl.java:373 | Failed to upsert for commit time 20241216133141860
+org.apache.hudi.exception.HoodieUpsertException: Failed to upsert for commit time 20241216133141860
+	at org.apache.hudi.table.action.commit.BaseWriteHelper.write(BaseWriteHelper.java:71)
+	at org.apache.hudi.table.action.commit.JavaUpsertCommitActionExecutor.execute(JavaUpsertCommitActionExecutor.java:53)
+	at org.apache.hudi.table.HoodieJavaCopyOnWriteTable.upsert(HoodieJavaCopyOnWriteTable.java:109)
+	at org.apache.hudi.table.HoodieJavaCopyOnWriteTable.upsert(HoodieJavaCopyOnWriteTable.java:88)
+	at org.apache.hudi.client.HoodieJavaWriteClient.upsert(HoodieJavaWriteClient.java:113)
+	at com.baosteel.bsee.etl.service.impl.DataFlowServiceImpl.writeIntoHudi(DataFlowServiceImpl.java:370)
+	at com.baosteel.bsee.etl.service.impl.DataFlowServiceImpl.writeDataFromHBase2Hoodie(DataFlowServiceImpl.java:210)
+	at com.baosteel.bsee.etl.service.impl.DataFlowServiceImpl.specifyTaskDetail(DataFlowServiceImpl.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.RuntimeException: org.apache.hudi.exception.HoodieException: org.apache.hudi.exception.HoodieException: java.util.concurrent.ExecutionException: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/6f9c697b-f292-4229-8275-9ced569a98ef-0_0-0-0_20241216133141860.parquet
+	at org.apache.hudi.client.utils.LazyIterableIterator.next(LazyIterableIterator.java:127)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at org.apache.hudi.table.action.commit.BaseJavaCommitActionExecutor.lambda$execute$0(BaseJavaCommitActionExecutor.java:126)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.apache.hudi.table.action.commit.BaseJavaCommitActionExecutor.execute(BaseJavaCommitActionExecutor.java:124)
+	at org.apache.hudi.table.action.commit.BaseJavaCommitActionExecutor.execute(BaseJavaCommitActionExecutor.java:74)
+	at org.apache.hudi.table.action.commit.BaseWriteHelper.write(BaseWriteHelper.java:64)
+	... 19 more
+Caused by: org.apache.hudi.exception.HoodieException: org.apache.hudi.exception.HoodieException: java.util.concurrent.ExecutionException: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/6f9c697b-f292-4229-8275-9ced569a98ef-0_0-0-0_20241216133141860.parquet
+	at org.apache.hudi.execution.JavaLazyInsertIterable.computeNext(JavaLazyInsertIterable.java:79)
+	at org.apache.hudi.execution.JavaLazyInsertIterable.computeNext(JavaLazyInsertIterable.java:44)
+	at org.apache.hudi.client.utils.LazyIterableIterator.next(LazyIterableIterator.java:125)
+	... 25 more
+Caused by: org.apache.hudi.exception.HoodieException: java.util.concurrent.ExecutionException: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/6f9c697b-f292-4229-8275-9ced569a98ef-0_0-0-0_20241216133141860.parquet
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.execute(BoundedInMemoryExecutor.java:168)
+	at org.apache.hudi.execution.JavaLazyInsertIterable.computeNext(JavaLazyInsertIterable.java:75)
+	... 27 more
+Caused by: java.util.concurrent.ExecutionException: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/6f9c697b-f292-4229-8275-9ced569a98ef-0_0-0-0_20241216133141860.parquet
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.execute(BoundedInMemoryExecutor.java:162)
+	... 28 more
+Caused by: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/6f9c697b-f292-4229-8275-9ced569a98ef-0_0-0-0_20241216133141860.parquet
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:113)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:82)
+	at org.apache.hudi.io.CreateHandleFactory.create(CreateHandleFactory.java:52)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:89)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:46)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryQueueConsumer.consume(BoundedInMemoryQueueConsumer.java:43)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.lambda$null$2(BoundedInMemoryExecutor.java:142)
+	... 4 more
+Caused by: java.io.IOException: Filesystem closed
+	at org.apache.hadoop.hdfs.DFSClient.checkOpen(DFSClient.java:537)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1375)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1357)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1339)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1277)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:608)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:605)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:619)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:529)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.lambda$create$12(HoodieWrapperFileSystem.java:318)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.executeFuncWithTimeMetrics(HoodieWrapperFileSystem.java:112)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.create(HoodieWrapperFileSystem.java:317)
+	at org.apache.parquet.hadoop.util.HadoopOutputFile.create(HadoopOutputFile.java:74)
+	at org.apache.parquet.hadoop.ParquetFileWriter.<init>(ParquetFileWriter.java:329)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:292)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:228)
+	at org.apache.hudi.io.storage.HoodieBaseParquetWriter.<init>(HoodieBaseParquetWriter.java:53)
+	at org.apache.hudi.io.storage.HoodieAvroParquetWriter.<init>(HoodieAvroParquetWriter.java:60)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:94)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:77)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.getFileWriter(HoodieFileWriterFactory.java:61)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:110)
+	... 10 more
+261997133 [task-2] INFO  org.apache.hudi.client.transaction.TransactionManager  - Transaction manager closed
+261997133 [task-2] INFO  org.apache.hudi.client.transaction.TransactionManager  - Transaction manager closed
+2024-12-16 13:31:50 | prod | bsee-etl | task-2 | INFO  | c.b.bsee.etl.service.impl.DataFlowServiceImpl |  | DataFlowServiceImpl.java:345 | Resolved filesystem for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/: hdfs://bdc-e16-13u-mrs-atlas800-02:25019
+262005417 [task-2] INFO  org.apache.hudi.client.transaction.TransactionManager  - Transaction dataBaseName = null, tableName = null
+262005419 [task-2] INFO  org.apache.hudi.client.BaseHoodieClient  - Embedded Timeline Server is disabled. Not starting timeline service
+262005419 [task-2] INFO  org.apache.hudi.client.transaction.TransactionManager  - Transaction dataBaseName = null, tableName = null
+2024-12-16 13:31:50 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:127 | Loading HoodieTableMetaClient from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+262005422 [task-2] INFO  org.apache.hudi.common.table.HoodieTableConfig  - Loading table properties from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/hoodie.properties
+2024-12-16 13:31:50 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:147 | Finished Loading Table of type MERGE_ON_READ(version=1, baseFileFormat=PARQUET) from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+2024-12-16 13:31:50 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:150 | Loading Active commit timeline for hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+262005427 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133141860__deltacommit__INFLIGHT]}
+262005427 [task-2] INFO  org.apache.hudi.common.util.CleanerUtils  - Cleaned failed attempts if any
+2024-12-16 13:31:50 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:127 | Loading HoodieTableMetaClient from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+262005429 [task-2] INFO  org.apache.hudi.common.table.HoodieTableConfig  - Loading table properties from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/hoodie.properties
+2024-12-16 13:31:50 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:147 | Finished Loading Table of type MERGE_ON_READ(version=1, baseFileFormat=PARQUET) from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+2024-12-16 13:31:50 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:150 | Loading Active commit timeline for hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+262005433 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133141860__deltacommit__INFLIGHT]}
+262005433 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating View Manager with storage type :MEMORY
+262005433 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating in-memory based Table View
+262005433 [task-2] INFO  org.apache.hudi.client.heartbeat.HoodieHeartbeatClient  - Heartbeat not found in internal map, falling back to reading from DFS
+262005434 [task-2] WARN  org.apache.hudi.client.heartbeat.HoodieHeartbeatClient  - Heartbeat expired, currentTime = 1734327110237, last heartbeat = Heartbeat{instantTime='20241216133141860', isHeartbeatStarted=false, isHeartbeatStopped=false, lastHeartbeatTime=0, numHeartbeats=0, timer=java.util.Timer@67eef53a}, heartbeat interval = 60000
+262005435 [task-2] INFO  org.apache.hudi.client.BaseHoodieWriteClient  - Begin rollback of instant 20241216133141860
+2024-12-16 13:31:50 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:127 | Loading HoodieTableMetaClient from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+262005436 [task-2] INFO  org.apache.hudi.common.table.HoodieTableConfig  - Loading table properties from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/hoodie.properties
+2024-12-16 13:31:50 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:147 | Finished Loading Table of type MERGE_ON_READ(version=1, baseFileFormat=PARQUET) from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+2024-12-16 13:31:50 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:150 | Loading Active commit timeline for hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+262005440 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133141860__deltacommit__INFLIGHT]}
+262005440 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating View Manager with storage type :MEMORY
+262005440 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating in-memory based Table View
+262005440 [task-2] INFO  org.apache.hudi.client.BaseHoodieWriteClient  - Scheduling Rollback at instant time : 20241216133150239 (exists in active timeline: true), with rollback plan: false
+262005465 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133150239__rollback__REQUESTED]}
+262005465 [task-2] INFO  org.apache.hudi.table.action.rollback.BaseRollbackPlanActionExecutor  - Requesting Rollback with instant time [==>20241216133150239__rollback__REQUESTED]
+262005466 [task-2] INFO  org.apache.hudi.client.transaction.TransactionManager  - Transaction dataBaseName = null, tableName = null
+262005469 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133150239__rollback__REQUESTED]}
+262005471 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Checking for file exists ?hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/20241216133150239.rollback.requested
+262005475 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Create new file for toInstant ?hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/20241216133150239.rollback.inflight
+262005475 [task-2] INFO  org.apache.hudi.table.action.rollback.CopyOnWriteRollbackActionExecutor  - Clean out all base files generated for commit: [==>20241216133141860__deltacommit__INFLIGHT]
+262005477 [task-2] INFO  org.apache.hudi.table.action.rollback.BaseRollbackHelper  - Succeed to delete invalid file during rollback hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/6f9c697b-f292-4229-8275-9ced569a98ef-0_0-0-0_20241216133141860.parquet
+262005477 [task-2] INFO  org.apache.hudi.table.action.rollback.CopyOnWriteRollbackActionExecutor  - Time(in ms) taken to finish rollback 2
+262005477 [task-2] INFO  org.apache.hudi.table.action.rollback.BaseRollbackActionExecutor  - Rolled back inflight instant 20241216133141860
+262005477 [task-2] INFO  org.apache.hudi.table.action.rollback.BaseRollbackActionExecutor  - Index rolled back for commits [==>20241216133141860__deltacommit__INFLIGHT]
+262005477 [task-2] INFO  org.apache.hudi.table.action.rollback.BaseRollbackActionExecutor  - Deleting instant=[==>20241216133141860__deltacommit__INFLIGHT]
+262005477 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Deleting instant [==>20241216133141860__deltacommit__INFLIGHT]
+262005478 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Removed instant [==>20241216133141860__deltacommit__INFLIGHT]
+262005478 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Deleting instant [==>20241216133141860__deltacommit__REQUESTED]
+262005479 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Removed instant [==>20241216133141860__deltacommit__REQUESTED]
+262005479 [task-2] INFO  org.apache.hudi.table.action.rollback.BaseRollbackActionExecutor  - Deleted pending commit [==>20241216133141860__deltacommit__REQUESTED]
+262005479 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Checking for file exists ?hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/20241216133150239.rollback.inflight
+262005496 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Create new file for toInstant ?hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/20241216133150239.rollback
+262005496 [task-2] INFO  org.apache.hudi.table.action.rollback.BaseRollbackActionExecutor  - Rollback of Commits [20241216133141860] is complete
+262005501 [task-2] INFO  org.apache.hudi.common.fs.FSUtils  - Removed directory at hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/.temp/20241216133141860
+262005501 [task-2] INFO  org.apache.hudi.client.BaseHoodieWriteClient  - Generate a new instant time: 20241216133150305 action: deltacommit
+262005501 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Creating a new instant [==>20241216133150305__deltacommit__REQUESTED]
+2024-12-16 13:31:50 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:127 | Loading HoodieTableMetaClient from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+262005505 [task-2] INFO  org.apache.hudi.common.table.HoodieTableConfig  - Loading table properties from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/hoodie.properties
+2024-12-16 13:31:50 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:147 | Finished Loading Table of type MERGE_ON_READ(version=1, baseFileFormat=PARQUET) from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+2024-12-16 13:31:50 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:150 | Loading Active commit timeline for hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+262005509 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133150305__deltacommit__REQUESTED]}
+262005509 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating View Manager with storage type :MEMORY
+262005509 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating in-memory based Table View
+262005509 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating InMemory based view for basePath hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01
+262005509 [task-2] INFO  org.apache.hudi.common.table.view.AbstractTableFileSystemView  - Took 0 ms to read  0 instants, 0 replaced file groups
+262005510 [task-2] INFO  org.apache.hudi.common.util.ClusteringUtils  - Found 0 files in pending clustering operations
+262005511 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133150305__deltacommit__REQUESTED]}
+262005511 [task-2] INFO  org.apache.hudi.common.table.view.AbstractTableFileSystemView  - Took 0 ms to read  0 instants, 0 replaced file groups
+262005512 [task-2] INFO  org.apache.hudi.common.util.ClusteringUtils  - Found 0 files in pending clustering operations
+262005512 [task-2] INFO  org.apache.hudi.async.AsyncCleanerService  - The HoodieWriteClient is not configured to auto & async clean. Async clean service will not start.
+262005512 [task-2] INFO  org.apache.hudi.async.AsyncArchiveService  - The HoodieWriteClient is not configured to auto & async archive. Async archive service will not start.
+262005513 [task-2] INFO  org.apache.hudi.client.transaction.TransactionManager  - Transaction dataBaseName = null, tableName = null
+262005532 [task-2] INFO  org.apache.hudi.table.action.commit.BaseJavaCommitActionExecutor  - Input workload profile :WorkloadProfile {globalStat=WorkloadStat {numInserts=8085, numUpdates=0}, InputPartitionStat={2024-08=WorkloadStat {numInserts=8085, numUpdates=0}}, OutputPartitionStat={}, operationType=null}
+262005532 [task-2] INFO  org.apache.hudi.table.action.commit.JavaUpsertPartitioner  - AvgRecordSize => 1024
+262005532 [task-2] INFO  org.apache.hudi.table.action.commit.JavaUpsertPartitioner  - For partitionPath : 2024-08 Small Files => []
+262005532 [task-2] INFO  org.apache.hudi.table.action.commit.JavaUpsertPartitioner  - After small file assignment: unassignedInserts => 8085, totalInsertBuckets => 1, recordsPerBucket => 122880
+262005532 [task-2] INFO  org.apache.hudi.table.action.commit.JavaUpsertPartitioner  - Total insert buckets for partition path 2024-08 => [(InsertBucket {bucketNumber=0, weight=1.0},1.0)]
+262005532 [task-2] INFO  org.apache.hudi.table.action.commit.JavaUpsertPartitioner  - Total Buckets :1, buckets info => {0=BucketInfo {bucketType=INSERT, fileIdPrefix=06f32d3b-6de5-4b3e-ab0a-0229250075cd, partitionPath=2024-08}}, 
+Partition to insert buckets => {2024-08=[(InsertBucket {bucketNumber=0, weight=1.0},1.0)]}, 
+UpdateLocations mapped to buckets =>{}
+262005533 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Checking for file exists ?hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/20241216133150305.deltacommit.requested
+262005549 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Create new file for toInstant ?hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/20241216133150305.deltacommit.inflight
+262005557 [producer-thread-1] INFO  org.apache.hudi.common.util.queue.IteratorBasedQueueProducer  - starting to buffer records
+262005559 [consumer-thread-1] INFO  org.apache.hudi.common.util.queue.BoundedInMemoryExecutor  - starting consumer thread
+262005565 [consumer-thread-1] INFO  org.apache.hudi.table.marker.DirectWriteMarkers  - Creating Marker Path=hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/.temp/20241216133150305/2024-08/06f32d3b-6de5-4b3e-ab0a-0229250075cd-0_0-0-0_20241216133150305.parquet.marker.CREATE
+262005568 [consumer-thread-1] INFO  org.apache.hudi.table.marker.DirectWriteMarkers  - [direct] Created marker file hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/.temp/20241216133150305/2024-08/06f32d3b-6de5-4b3e-ab0a-0229250075cd-0_0-0-0_20241216133150305.parquet.marker.CREATE in 5 ms
+262005570 [consumer-thread-1] ERROR org.apache.hudi.common.util.queue.BoundedInMemoryExecutor  - error consuming records
+org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/06f32d3b-6de5-4b3e-ab0a-0229250075cd-0_0-0-0_20241216133150305.parquet
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:113)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:82)
+	at org.apache.hudi.io.CreateHandleFactory.create(CreateHandleFactory.java:52)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:89)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:46)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryQueueConsumer.consume(BoundedInMemoryQueueConsumer.java:43)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.lambda$null$2(BoundedInMemoryExecutor.java:142)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Filesystem closed
+	at org.apache.hadoop.hdfs.DFSClient.checkOpen(DFSClient.java:537)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1375)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1357)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1339)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1277)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:608)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:605)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:619)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:529)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.lambda$create$12(HoodieWrapperFileSystem.java:318)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.executeFuncWithTimeMetrics(HoodieWrapperFileSystem.java:112)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.create(HoodieWrapperFileSystem.java:317)
+	at org.apache.parquet.hadoop.util.HadoopOutputFile.create(HadoopOutputFile.java:74)
+	at org.apache.parquet.hadoop.ParquetFileWriter.<init>(ParquetFileWriter.java:329)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:292)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:228)
+	at org.apache.hudi.io.storage.HoodieBaseParquetWriter.<init>(HoodieBaseParquetWriter.java:53)
+	at org.apache.hudi.io.storage.HoodieAvroParquetWriter.<init>(HoodieAvroParquetWriter.java:60)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:94)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:77)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.getFileWriter(HoodieFileWriterFactory.java:61)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:110)
+	... 10 more
+262005571 [producer-thread-1] ERROR org.apache.hudi.common.util.queue.BoundedInMemoryExecutor  - error producing records
+org.apache.hudi.exception.HoodieException: operation has failed
+	at org.apache.hudi.common.util.queue.BoundedInMemoryQueue.throwExceptionIfFailed(BoundedInMemoryQueue.java:254)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryQueue.insertRecord(BoundedInMemoryQueue.java:190)
+	at org.apache.hudi.common.util.queue.IteratorBasedQueueProducer.produce(IteratorBasedQueueProducer.java:52)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.lambda$null$0(BoundedInMemoryExecutor.java:113)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/06f32d3b-6de5-4b3e-ab0a-0229250075cd-0_0-0-0_20241216133150305.parquet
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:113)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:82)
+	at org.apache.hudi.io.CreateHandleFactory.create(CreateHandleFactory.java:52)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:89)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:46)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryQueueConsumer.consume(BoundedInMemoryQueueConsumer.java:43)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.lambda$null$2(BoundedInMemoryExecutor.java:142)
+	... 4 more
+Caused by: java.io.IOException: Filesystem closed
+	at org.apache.hadoop.hdfs.DFSClient.checkOpen(DFSClient.java:537)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1375)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1357)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1339)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1277)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:608)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:605)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:619)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:529)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.lambda$create$12(HoodieWrapperFileSystem.java:318)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.executeFuncWithTimeMetrics(HoodieWrapperFileSystem.java:112)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.create(HoodieWrapperFileSystem.java:317)
+	at org.apache.parquet.hadoop.util.HadoopOutputFile.create(HadoopOutputFile.java:74)
+	at org.apache.parquet.hadoop.ParquetFileWriter.<init>(ParquetFileWriter.java:329)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:292)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:228)
+	at org.apache.hudi.io.storage.HoodieBaseParquetWriter.<init>(HoodieBaseParquetWriter.java:53)
+	at org.apache.hudi.io.storage.HoodieAvroParquetWriter.<init>(HoodieAvroParquetWriter.java:60)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:94)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:77)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.getFileWriter(HoodieFileWriterFactory.java:61)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:110)
+	... 10 more
+2024-12-16 13:31:50 | prod | bsee-etl | task-2 | ERROR | c.b.bsee.etl.service.impl.DataFlowServiceImpl |  | DataFlowServiceImpl.java:372 | Hudi 写入失败
+2024-12-16 13:31:50 | prod | bsee-etl | task-2 | ERROR | c.b.bsee.etl.service.impl.DataFlowServiceImpl |  | DataFlowServiceImpl.java:373 | Failed to upsert for commit time 20241216133150305
+org.apache.hudi.exception.HoodieUpsertException: Failed to upsert for commit time 20241216133150305
+	at org.apache.hudi.table.action.commit.BaseWriteHelper.write(BaseWriteHelper.java:71)
+	at org.apache.hudi.table.action.commit.JavaUpsertCommitActionExecutor.execute(JavaUpsertCommitActionExecutor.java:53)
+	at org.apache.hudi.table.HoodieJavaCopyOnWriteTable.upsert(HoodieJavaCopyOnWriteTable.java:109)
+	at org.apache.hudi.table.HoodieJavaCopyOnWriteTable.upsert(HoodieJavaCopyOnWriteTable.java:88)
+	at org.apache.hudi.client.HoodieJavaWriteClient.upsert(HoodieJavaWriteClient.java:113)
+	at com.baosteel.bsee.etl.service.impl.DataFlowServiceImpl.writeIntoHudi(DataFlowServiceImpl.java:370)
+	at com.baosteel.bsee.etl.service.impl.DataFlowServiceImpl.writeDataFromHBase2Hoodie(DataFlowServiceImpl.java:210)
+	at com.baosteel.bsee.etl.service.impl.DataFlowServiceImpl.specifyTaskDetail(DataFlowServiceImpl.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.RuntimeException: org.apache.hudi.exception.HoodieException: org.apache.hudi.exception.HoodieException: java.util.concurrent.ExecutionException: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/06f32d3b-6de5-4b3e-ab0a-0229250075cd-0_0-0-0_20241216133150305.parquet
+	at org.apache.hudi.client.utils.LazyIterableIterator.next(LazyIterableIterator.java:127)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at org.apache.hudi.table.action.commit.BaseJavaCommitActionExecutor.lambda$execute$0(BaseJavaCommitActionExecutor.java:126)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.apache.hudi.table.action.commit.BaseJavaCommitActionExecutor.execute(BaseJavaCommitActionExecutor.java:124)
+	at org.apache.hudi.table.action.commit.BaseJavaCommitActionExecutor.execute(BaseJavaCommitActionExecutor.java:74)
+	at org.apache.hudi.table.action.commit.BaseWriteHelper.write(BaseWriteHelper.java:64)
+	... 19 more
+Caused by: org.apache.hudi.exception.HoodieException: org.apache.hudi.exception.HoodieException: java.util.concurrent.ExecutionException: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/06f32d3b-6de5-4b3e-ab0a-0229250075cd-0_0-0-0_20241216133150305.parquet
+	at org.apache.hudi.execution.JavaLazyInsertIterable.computeNext(JavaLazyInsertIterable.java:79)
+	at org.apache.hudi.execution.JavaLazyInsertIterable.computeNext(JavaLazyInsertIterable.java:44)
+	at org.apache.hudi.client.utils.LazyIterableIterator.next(LazyIterableIterator.java:125)
+	... 25 more
+Caused by: org.apache.hudi.exception.HoodieException: java.util.concurrent.ExecutionException: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/06f32d3b-6de5-4b3e-ab0a-0229250075cd-0_0-0-0_20241216133150305.parquet
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.execute(BoundedInMemoryExecutor.java:168)
+	at org.apache.hudi.execution.JavaLazyInsertIterable.computeNext(JavaLazyInsertIterable.java:75)
+	... 27 more
+Caused by: java.util.concurrent.ExecutionException: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/06f32d3b-6de5-4b3e-ab0a-0229250075cd-0_0-0-0_20241216133150305.parquet
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.execute(BoundedInMemoryExecutor.java:162)
+	... 28 more
+Caused by: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/06f32d3b-6de5-4b3e-ab0a-0229250075cd-0_0-0-0_20241216133150305.parquet
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:113)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:82)
+	at org.apache.hudi.io.CreateHandleFactory.create(CreateHandleFactory.java:52)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:89)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:46)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryQueueConsumer.consume(BoundedInMemoryQueueConsumer.java:43)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.lambda$null$2(BoundedInMemoryExecutor.java:142)
+	... 4 more
+Caused by: java.io.IOException: Filesystem closed
+	at org.apache.hadoop.hdfs.DFSClient.checkOpen(DFSClient.java:537)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1375)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1357)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1339)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1277)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:608)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:605)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:619)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:529)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.lambda$create$12(HoodieWrapperFileSystem.java:318)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.executeFuncWithTimeMetrics(HoodieWrapperFileSystem.java:112)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.create(HoodieWrapperFileSystem.java:317)
+	at org.apache.parquet.hadoop.util.HadoopOutputFile.create(HadoopOutputFile.java:74)
+	at org.apache.parquet.hadoop.ParquetFileWriter.<init>(ParquetFileWriter.java:329)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:292)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:228)
+	at org.apache.hudi.io.storage.HoodieBaseParquetWriter.<init>(HoodieBaseParquetWriter.java:53)
+	at org.apache.hudi.io.storage.HoodieAvroParquetWriter.<init>(HoodieAvroParquetWriter.java:60)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:94)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:77)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.getFileWriter(HoodieFileWriterFactory.java:61)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:110)
+	... 10 more
+262005572 [task-2] INFO  org.apache.hudi.client.transaction.TransactionManager  - Transaction manager closed
+262005572 [task-2] INFO  org.apache.hudi.client.transaction.TransactionManager  - Transaction manager closed
+2024-12-16 13:31:59 | prod | bsee-etl | task-2 | INFO  | c.b.bsee.etl.service.impl.DataFlowServiceImpl |  | DataFlowServiceImpl.java:345 | Resolved filesystem for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/: hdfs://bdc-e16-13u-mrs-atlas800-02:25019
+262014708 [task-2] INFO  org.apache.hudi.client.transaction.TransactionManager  - Transaction dataBaseName = null, tableName = null
+262014709 [task-2] INFO  org.apache.hudi.client.BaseHoodieClient  - Embedded Timeline Server is disabled. Not starting timeline service
+262014710 [task-2] INFO  org.apache.hudi.client.transaction.TransactionManager  - Transaction dataBaseName = null, tableName = null
+2024-12-16 13:31:59 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:127 | Loading HoodieTableMetaClient from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+262014713 [task-2] INFO  org.apache.hudi.common.table.HoodieTableConfig  - Loading table properties from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/hoodie.properties
+2024-12-16 13:31:59 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:147 | Finished Loading Table of type MERGE_ON_READ(version=1, baseFileFormat=PARQUET) from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+2024-12-16 13:31:59 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:150 | Loading Active commit timeline for hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+262014721 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133150305__deltacommit__INFLIGHT]}
+262014721 [task-2] INFO  org.apache.hudi.common.util.CleanerUtils  - Cleaned failed attempts if any
+2024-12-16 13:31:59 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:127 | Loading HoodieTableMetaClient from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+262014722 [task-2] INFO  org.apache.hudi.common.table.HoodieTableConfig  - Loading table properties from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/hoodie.properties
+2024-12-16 13:31:59 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:147 | Finished Loading Table of type MERGE_ON_READ(version=1, baseFileFormat=PARQUET) from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+2024-12-16 13:31:59 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:150 | Loading Active commit timeline for hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+262014726 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133150305__deltacommit__INFLIGHT]}
+262014726 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating View Manager with storage type :MEMORY
+262014726 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating in-memory based Table View
+262014726 [task-2] INFO  org.apache.hudi.client.heartbeat.HoodieHeartbeatClient  - Heartbeat not found in internal map, falling back to reading from DFS
+262014728 [task-2] WARN  org.apache.hudi.client.heartbeat.HoodieHeartbeatClient  - Heartbeat expired, currentTime = 1734327119530, last heartbeat = Heartbeat{instantTime='20241216133150305', isHeartbeatStarted=false, isHeartbeatStopped=false, lastHeartbeatTime=0, numHeartbeats=0, timer=java.util.Timer@5c1e4305}, heartbeat interval = 60000
+262014728 [task-2] INFO  org.apache.hudi.client.BaseHoodieWriteClient  - Begin rollback of instant 20241216133150305
+2024-12-16 13:31:59 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:127 | Loading HoodieTableMetaClient from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+262014729 [task-2] INFO  org.apache.hudi.common.table.HoodieTableConfig  - Loading table properties from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/hoodie.properties
+2024-12-16 13:31:59 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:147 | Finished Loading Table of type MERGE_ON_READ(version=1, baseFileFormat=PARQUET) from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+2024-12-16 13:31:59 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:150 | Loading Active commit timeline for hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+262014733 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133150305__deltacommit__INFLIGHT]}
+262014734 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating View Manager with storage type :MEMORY
+262014734 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating in-memory based Table View
+262014734 [task-2] INFO  org.apache.hudi.client.BaseHoodieWriteClient  - Scheduling Rollback at instant time : 20241216133159532 (exists in active timeline: true), with rollback plan: false
+262014756 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133159532__rollback__REQUESTED]}
+262014756 [task-2] INFO  org.apache.hudi.table.action.rollback.BaseRollbackPlanActionExecutor  - Requesting Rollback with instant time [==>20241216133159532__rollback__REQUESTED]
+262014757 [task-2] INFO  org.apache.hudi.client.transaction.TransactionManager  - Transaction dataBaseName = null, tableName = null
+262014759 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133159532__rollback__REQUESTED]}
+262014761 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Checking for file exists ?hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/20241216133159532.rollback.requested
+262014765 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Create new file for toInstant ?hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/20241216133159532.rollback.inflight
+262014765 [task-2] INFO  org.apache.hudi.table.action.rollback.CopyOnWriteRollbackActionExecutor  - Clean out all base files generated for commit: [==>20241216133150305__deltacommit__INFLIGHT]
+262014766 [task-2] INFO  org.apache.hudi.table.action.rollback.BaseRollbackHelper  - Succeed to delete invalid file during rollback hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/06f32d3b-6de5-4b3e-ab0a-0229250075cd-0_0-0-0_20241216133150305.parquet
+262014766 [task-2] INFO  org.apache.hudi.table.action.rollback.CopyOnWriteRollbackActionExecutor  - Time(in ms) taken to finish rollback 1
+262014766 [task-2] INFO  org.apache.hudi.table.action.rollback.BaseRollbackActionExecutor  - Rolled back inflight instant 20241216133150305
+262014766 [task-2] INFO  org.apache.hudi.table.action.rollback.BaseRollbackActionExecutor  - Index rolled back for commits [==>20241216133150305__deltacommit__INFLIGHT]
+262014766 [task-2] INFO  org.apache.hudi.table.action.rollback.BaseRollbackActionExecutor  - Deleting instant=[==>20241216133150305__deltacommit__INFLIGHT]
+262014766 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Deleting instant [==>20241216133150305__deltacommit__INFLIGHT]
+262014767 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Removed instant [==>20241216133150305__deltacommit__INFLIGHT]
+262014767 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Deleting instant [==>20241216133150305__deltacommit__REQUESTED]
+262014769 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Removed instant [==>20241216133150305__deltacommit__REQUESTED]
+262014769 [task-2] INFO  org.apache.hudi.table.action.rollback.BaseRollbackActionExecutor  - Deleted pending commit [==>20241216133150305__deltacommit__REQUESTED]
+262014769 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Checking for file exists ?hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/20241216133159532.rollback.inflight
+262014786 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Create new file for toInstant ?hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/20241216133159532.rollback
+262014786 [task-2] INFO  org.apache.hudi.table.action.rollback.BaseRollbackActionExecutor  - Rollback of Commits [20241216133150305] is complete
+262014790 [task-2] INFO  org.apache.hudi.common.fs.FSUtils  - Removed directory at hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/.temp/20241216133150305
+262014790 [task-2] INFO  org.apache.hudi.client.BaseHoodieWriteClient  - Generate a new instant time: 20241216133159594 action: deltacommit
+262014790 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Creating a new instant [==>20241216133159594__deltacommit__REQUESTED]
+2024-12-16 13:31:59 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:127 | Loading HoodieTableMetaClient from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+262014795 [task-2] INFO  org.apache.hudi.common.table.HoodieTableConfig  - Loading table properties from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/hoodie.properties
+2024-12-16 13:31:59 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:147 | Finished Loading Table of type MERGE_ON_READ(version=1, baseFileFormat=PARQUET) from hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+2024-12-16 13:31:59 | prod | bsee-etl | task-2 | INFO  | org.apache.hudi.common.table.HoodieTableMetaClient |  | HoodieTableMetaClient.java:150 | Loading Active commit timeline for hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/
+262014798 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133159594__deltacommit__REQUESTED]}
+262014798 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating View Manager with storage type :MEMORY
+262014798 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating in-memory based Table View
+262014798 [task-2] INFO  org.apache.hudi.common.table.view.FileSystemViewManager  - Creating InMemory based view for basePath hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01
+262014798 [task-2] INFO  org.apache.hudi.common.table.view.AbstractTableFileSystemView  - Took 0 ms to read  0 instants, 0 replaced file groups
+262014799 [task-2] INFO  org.apache.hudi.common.util.ClusteringUtils  - Found 0 files in pending clustering operations
+262014800 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Loaded instants upto : Option{val=[==>20241216133159594__deltacommit__REQUESTED]}
+262014800 [task-2] INFO  org.apache.hudi.common.table.view.AbstractTableFileSystemView  - Took 0 ms to read  0 instants, 0 replaced file groups
+262014801 [task-2] INFO  org.apache.hudi.common.util.ClusteringUtils  - Found 0 files in pending clustering operations
+262014801 [task-2] INFO  org.apache.hudi.async.AsyncCleanerService  - The HoodieWriteClient is not configured to auto & async clean. Async clean service will not start.
+262014801 [task-2] INFO  org.apache.hudi.async.AsyncArchiveService  - The HoodieWriteClient is not configured to auto & async archive. Async archive service will not start.
+262014802 [task-2] INFO  org.apache.hudi.client.transaction.TransactionManager  - Transaction dataBaseName = null, tableName = null
+262014829 [task-2] INFO  org.apache.hudi.table.action.commit.BaseJavaCommitActionExecutor  - Input workload profile :WorkloadProfile {globalStat=WorkloadStat {numInserts=9095, numUpdates=0}, InputPartitionStat={2024-08=WorkloadStat {numInserts=9095, numUpdates=0}}, OutputPartitionStat={}, operationType=null}
+262014829 [task-2] INFO  org.apache.hudi.table.action.commit.JavaUpsertPartitioner  - AvgRecordSize => 1024
+262014829 [task-2] INFO  org.apache.hudi.table.action.commit.JavaUpsertPartitioner  - For partitionPath : 2024-08 Small Files => []
+262014829 [task-2] INFO  org.apache.hudi.table.action.commit.JavaUpsertPartitioner  - After small file assignment: unassignedInserts => 9095, totalInsertBuckets => 1, recordsPerBucket => 122880
+262014829 [task-2] INFO  org.apache.hudi.table.action.commit.JavaUpsertPartitioner  - Total insert buckets for partition path 2024-08 => [(InsertBucket {bucketNumber=0, weight=1.0},1.0)]
+262014829 [task-2] INFO  org.apache.hudi.table.action.commit.JavaUpsertPartitioner  - Total Buckets :1, buckets info => {0=BucketInfo {bucketType=INSERT, fileIdPrefix=fec75042-d152-4900-b0cb-e3d8b52d1160, partitionPath=2024-08}}, 
+Partition to insert buckets => {2024-08=[(InsertBucket {bucketNumber=0, weight=1.0},1.0)]}, 
+UpdateLocations mapped to buckets =>{}
+262014830 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Checking for file exists ?hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/20241216133159594.deltacommit.requested
+262014848 [task-2] INFO  org.apache.hudi.common.table.timeline.HoodieActiveTimeline  - Create new file for toInstant ?hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/20241216133159594.deltacommit.inflight
+262014857 [producer-thread-1] INFO  org.apache.hudi.common.util.queue.IteratorBasedQueueProducer  - starting to buffer records
+262014858 [consumer-thread-1] INFO  org.apache.hudi.common.util.queue.BoundedInMemoryExecutor  - starting consumer thread
+262014867 [consumer-thread-1] INFO  org.apache.hudi.table.marker.DirectWriteMarkers  - Creating Marker Path=hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/.temp/20241216133159594/2024-08/fec75042-d152-4900-b0cb-e3d8b52d1160-0_0-0-0_20241216133159594.parquet.marker.CREATE
+262014870 [consumer-thread-1] INFO  org.apache.hudi.table.marker.DirectWriteMarkers  - [direct] Created marker file hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/.hoodie/.temp/20241216133159594/2024-08/fec75042-d152-4900-b0cb-e3d8b52d1160-0_0-0-0_20241216133159594.parquet.marker.CREATE in 5 ms
+262014872 [consumer-thread-1] ERROR org.apache.hudi.common.util.queue.BoundedInMemoryExecutor  - error consuming records
+org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/fec75042-d152-4900-b0cb-e3d8b52d1160-0_0-0-0_20241216133159594.parquet
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:113)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:82)
+	at org.apache.hudi.io.CreateHandleFactory.create(CreateHandleFactory.java:52)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:89)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:46)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryQueueConsumer.consume(BoundedInMemoryQueueConsumer.java:43)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.lambda$null$2(BoundedInMemoryExecutor.java:142)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Filesystem closed
+	at org.apache.hadoop.hdfs.DFSClient.checkOpen(DFSClient.java:537)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1375)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1357)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1339)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1277)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:608)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:605)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:619)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:529)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.lambda$create$12(HoodieWrapperFileSystem.java:318)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.executeFuncWithTimeMetrics(HoodieWrapperFileSystem.java:112)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.create(HoodieWrapperFileSystem.java:317)
+	at org.apache.parquet.hadoop.util.HadoopOutputFile.create(HadoopOutputFile.java:74)
+	at org.apache.parquet.hadoop.ParquetFileWriter.<init>(ParquetFileWriter.java:329)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:292)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:228)
+	at org.apache.hudi.io.storage.HoodieBaseParquetWriter.<init>(HoodieBaseParquetWriter.java:53)
+	at org.apache.hudi.io.storage.HoodieAvroParquetWriter.<init>(HoodieAvroParquetWriter.java:60)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:94)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:77)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.getFileWriter(HoodieFileWriterFactory.java:61)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:110)
+	... 10 more
+262014873 [producer-thread-1] ERROR org.apache.hudi.common.util.queue.BoundedInMemoryExecutor  - error producing records
+org.apache.hudi.exception.HoodieException: operation has failed
+	at org.apache.hudi.common.util.queue.BoundedInMemoryQueue.throwExceptionIfFailed(BoundedInMemoryQueue.java:254)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryQueue.insertRecord(BoundedInMemoryQueue.java:190)
+	at org.apache.hudi.common.util.queue.IteratorBasedQueueProducer.produce(IteratorBasedQueueProducer.java:52)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.lambda$null$0(BoundedInMemoryExecutor.java:113)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/fec75042-d152-4900-b0cb-e3d8b52d1160-0_0-0-0_20241216133159594.parquet
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:113)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:82)
+	at org.apache.hudi.io.CreateHandleFactory.create(CreateHandleFactory.java:52)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:89)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:46)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryQueueConsumer.consume(BoundedInMemoryQueueConsumer.java:43)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.lambda$null$2(BoundedInMemoryExecutor.java:142)
+	... 4 more
+Caused by: java.io.IOException: Filesystem closed
+	at org.apache.hadoop.hdfs.DFSClient.checkOpen(DFSClient.java:537)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1375)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1357)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1339)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1277)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:608)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:605)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:619)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:529)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.lambda$create$12(HoodieWrapperFileSystem.java:318)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.executeFuncWithTimeMetrics(HoodieWrapperFileSystem.java:112)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.create(HoodieWrapperFileSystem.java:317)
+	at org.apache.parquet.hadoop.util.HadoopOutputFile.create(HadoopOutputFile.java:74)
+	at org.apache.parquet.hadoop.ParquetFileWriter.<init>(ParquetFileWriter.java:329)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:292)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:228)
+	at org.apache.hudi.io.storage.HoodieBaseParquetWriter.<init>(HoodieBaseParquetWriter.java:53)
+	at org.apache.hudi.io.storage.HoodieAvroParquetWriter.<init>(HoodieAvroParquetWriter.java:60)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:94)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:77)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.getFileWriter(HoodieFileWriterFactory.java:61)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:110)
+	... 10 more
+2024-12-16 13:31:59 | prod | bsee-etl | task-2 | ERROR | c.b.bsee.etl.service.impl.DataFlowServiceImpl |  | DataFlowServiceImpl.java:372 | Hudi 写入失败
+2024-12-16 13:31:59 | prod | bsee-etl | task-2 | ERROR | c.b.bsee.etl.service.impl.DataFlowServiceImpl |  | DataFlowServiceImpl.java:373 | Failed to upsert for commit time 20241216133159594
+org.apache.hudi.exception.HoodieUpsertException: Failed to upsert for commit time 20241216133159594
+	at org.apache.hudi.table.action.commit.BaseWriteHelper.write(BaseWriteHelper.java:71)
+	at org.apache.hudi.table.action.commit.JavaUpsertCommitActionExecutor.execute(JavaUpsertCommitActionExecutor.java:53)
+	at org.apache.hudi.table.HoodieJavaCopyOnWriteTable.upsert(HoodieJavaCopyOnWriteTable.java:109)
+	at org.apache.hudi.table.HoodieJavaCopyOnWriteTable.upsert(HoodieJavaCopyOnWriteTable.java:88)
+	at org.apache.hudi.client.HoodieJavaWriteClient.upsert(HoodieJavaWriteClient.java:113)
+	at com.baosteel.bsee.etl.service.impl.DataFlowServiceImpl.writeIntoHudi(DataFlowServiceImpl.java:370)
+	at com.baosteel.bsee.etl.service.impl.DataFlowServiceImpl.writeDataFromHBase2Hoodie(DataFlowServiceImpl.java:210)
+	at com.baosteel.bsee.etl.service.impl.DataFlowServiceImpl.specifyTaskDetail(DataFlowServiceImpl.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.RuntimeException: org.apache.hudi.exception.HoodieException: org.apache.hudi.exception.HoodieException: java.util.concurrent.ExecutionException: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/fec75042-d152-4900-b0cb-e3d8b52d1160-0_0-0-0_20241216133159594.parquet
+	at org.apache.hudi.client.utils.LazyIterableIterator.next(LazyIterableIterator.java:127)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at org.apache.hudi.table.action.commit.BaseJavaCommitActionExecutor.lambda$execute$0(BaseJavaCommitActionExecutor.java:126)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.apache.hudi.table.action.commit.BaseJavaCommitActionExecutor.execute(BaseJavaCommitActionExecutor.java:124)
+	at org.apache.hudi.table.action.commit.BaseJavaCommitActionExecutor.execute(BaseJavaCommitActionExecutor.java:74)
+	at org.apache.hudi.table.action.commit.BaseWriteHelper.write(BaseWriteHelper.java:64)
+	... 19 more
+Caused by: org.apache.hudi.exception.HoodieException: org.apache.hudi.exception.HoodieException: java.util.concurrent.ExecutionException: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/fec75042-d152-4900-b0cb-e3d8b52d1160-0_0-0-0_20241216133159594.parquet
+	at org.apache.hudi.execution.JavaLazyInsertIterable.computeNext(JavaLazyInsertIterable.java:79)
+	at org.apache.hudi.execution.JavaLazyInsertIterable.computeNext(JavaLazyInsertIterable.java:44)
+	at org.apache.hudi.client.utils.LazyIterableIterator.next(LazyIterableIterator.java:125)
+	... 25 more
+Caused by: org.apache.hudi.exception.HoodieException: java.util.concurrent.ExecutionException: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/fec75042-d152-4900-b0cb-e3d8b52d1160-0_0-0-0_20241216133159594.parquet
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.execute(BoundedInMemoryExecutor.java:168)
+	at org.apache.hudi.execution.JavaLazyInsertIterable.computeNext(JavaLazyInsertIterable.java:75)
+	... 27 more
+Caused by: java.util.concurrent.ExecutionException: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/fec75042-d152-4900-b0cb-e3d8b52d1160-0_0-0-0_20241216133159594.parquet
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.execute(BoundedInMemoryExecutor.java:162)
+	... 28 more
+Caused by: org.apache.hudi.exception.HoodieInsertException: Failed to initialize HoodieStorageWriter for path hdfs://bdc-e16-13u-mrs-atlas800-02:25019/user/hive/warehouse/hudi_etl/data_2cc.db/wxh-20241216-test-01/2024-08/fec75042-d152-4900-b0cb-e3d8b52d1160-0_0-0-0_20241216133159594.parquet
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:113)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:82)
+	at org.apache.hudi.io.CreateHandleFactory.create(CreateHandleFactory.java:52)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:89)
+	at org.apache.hudi.execution.CopyOnWriteInsertHandler.consumeOneRecord(CopyOnWriteInsertHandler.java:46)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryQueueConsumer.consume(BoundedInMemoryQueueConsumer.java:43)
+	at org.apache.hudi.common.util.queue.BoundedInMemoryExecutor.lambda$null$2(BoundedInMemoryExecutor.java:142)
+	... 4 more
+Caused by: java.io.IOException: Filesystem closed
+	at org.apache.hadoop.hdfs.DFSClient.checkOpen(DFSClient.java:537)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1375)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1357)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1339)
+	at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1277)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:608)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:605)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:619)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:529)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.lambda$create$12(HoodieWrapperFileSystem.java:318)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.executeFuncWithTimeMetrics(HoodieWrapperFileSystem.java:112)
+	at org.apache.hudi.common.fs.HoodieWrapperFileSystem.create(HoodieWrapperFileSystem.java:317)
+	at org.apache.parquet.hadoop.util.HadoopOutputFile.create(HadoopOutputFile.java:74)
+	at org.apache.parquet.hadoop.ParquetFileWriter.<init>(ParquetFileWriter.java:329)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:292)
+	at org.apache.parquet.hadoop.ParquetWriter.<init>(ParquetWriter.java:228)
+	at org.apache.hudi.io.storage.HoodieBaseParquetWriter.<init>(HoodieBaseParquetWriter.java:53)
+	at org.apache.hudi.io.storage.HoodieAvroParquetWriter.<init>(HoodieAvroParquetWriter.java:60)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:94)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.newParquetFileWriter(HoodieFileWriterFactory.java:77)
+	at org.apache.hudi.io.storage.HoodieFileWriterFactory.getFileWriter(HoodieFileWriterFactory.java:61)
+	at org.apache.hudi.io.HoodieCreateHandle.<init>(HoodieCreateHandle.java:110)
+	... 10 more
+262014874 [task-2] INFO  org.apache.hudi.client.transaction.TransactionManager  - Transaction manager closed
+262014874 [task-2] INFO  org.apache.hudi.client.transaction.TransactionManager  - Transaction manager closed
